@@ -14,8 +14,8 @@ export const Navbar = () => {
   const styleBr = {fontFamily: 'Caveat', fontSize: '50px'}
 
   return (
-    <header className="bg-white-100">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between lg:px-2" aria-label="Global">
+    <header className="bg-white-100 px-2">
+      <nav className="mx-auto lg:px-2 max-w-7xl flex  items-center justify-between" aria-label="Global">
         <div className="flex lg:flex-1">
           <div className="flex items-center justify-center">
             <div>
