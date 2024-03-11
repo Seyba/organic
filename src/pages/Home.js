@@ -41,25 +41,27 @@ export const Home = () => {
   };
   return (
     <div>
-      <div className="grid grid-cols-2 gap-4 bg-green-900">
+      <section className="lg:grid grid-cols-2 place-items-center gap-8 green-one md:p-20 p-4">
         <div>
-          <h2>Fresh. Healthy. Oragnic</h2>
-          <p>Welcome to the source of the future of healthy eating</p>
-          <p>Organic, nutritious food, 
-            powered by the intersection of biotech and agriculture, 
-            delivered right to your doorstep.
-          </p>
-          <div>
-            <button>Start Eating Clean</button>
-            <button>Learn more</button>
+          <div className="mb-8">
+            <h2 className="text-lg text-white font-bold uppercase py-4">Fresh. Healthy. Oragnic</h2>
+            <h3 className="text-5xl text-white font-bold">Welcome to the source of the future of healthy eating</h3>
+            <p className="text-base py-4 tracking-wide  text-white font-medium">Organic, nutritious food, 
+              powered by the intersection of biotech and agriculture, 
+              delivered right to your doorstep.
+            </p>
+            <div className="">
+              <button className="bg-white py-3 px-6 rounded-3xl text-lg  tracking-tight font-medium mr-4 mb-4">Start Eating Clean</button>
+              <button className="border-2 border-slate-100 py-3 px-6 rounded-3xl text-lg text-slate-100 tracking-tight font-medium">Learn more</button>
+            </div>
           </div>
         </div>
         <div>
-          <div>
-            <img src="/images/veggies.jpg" alt="veggies"/>
+          <div className="">
+            <img className="h-auto max-w-full rounded-ss-1/2" src="/images/veggies.jpg" alt="veggies"/>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   )
 }
