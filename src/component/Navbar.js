@@ -24,13 +24,12 @@ export const Navbar = () => {
                 <img src="/images/logo.png" className="h-14 w-14" alt="logo"/>
               </Link>
             </div>
-            <div className="ml-2">
+            <div className="ml-2 hidden md:block">
               <h3 className="uppercase font-bold tracking-tight">Soumppou</h3>
               <h3 className="uppercase font-bold tracking-tight">Kaffo</h3>
               <h3 className="uppercase font-bold tracking-tight">Farm</h3>
             </div>
           </div>
-          
         </div>
         <div className="flex lg:hidden">
           <button
@@ -52,7 +51,7 @@ export const Navbar = () => {
             to="/about" 
             className="text-sm font-semibold leading-6 text-gray-900"
           >
-            About
+            About Us
           </Link>
           <Link to="/shop" className="text-sm font-semibold leading-6 text-gray-900">
             Shop
@@ -118,7 +117,7 @@ export const Navbar = () => {
                   to="/about"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  About
+                  About Us
                 </Link>
                 <Link
                   onClick={() => setMobileMenuOpen(false)}
