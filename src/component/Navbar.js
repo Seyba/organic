@@ -24,7 +24,7 @@ export const Navbar = () => {
                 <img src="/images/logo.png" className="h-14 w-14" alt="logo"/>
               </Link>
             </div>
-            <div className="ml-2 hidden md:block">
+            <div className="ml-2 hidden sm:block">
               <h3 className="uppercase font-bold tracking-tight">Soumppou</h3>
               <h3 className="uppercase font-bold tracking-tight">Kaffo</h3>
               <h3 className="uppercase font-bold tracking-tight">Farm</h3>
@@ -46,17 +46,17 @@ export const Navbar = () => {
           </button>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
-          <Link className="text-sm font-semibold leading-6 text-gray-900" to="/">Home</Link>
+          <Link className="text-xl font-semibold leading-6 text-green-800" to="/">Home</Link>
           <Link 
             to="/about" 
-            className="text-sm font-semibold leading-6 text-gray-900"
+            className="text-xl font-semibold leading-6 text-green-800"
           >
             About Us
           </Link>
-          <Link to="/shop" className="text-sm font-semibold leading-6 text-gray-900">
+          <Link to="/shop" className="text-xl font-semibold leading-6 text-green-800">
             Shop
           </Link>
-          <Link to="/contact" className="text-sm font-semibold leading-6 text-gray-900">
+          <Link to="/contact" className="text-xl font-semibold leading-6 text-green-800">
             Contact
           </Link>
         </Popover.Group>
