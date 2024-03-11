@@ -15,12 +15,22 @@ export const Navbar = () => {
 
   return (
     <header className="bg-white-100">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-2" aria-label="Global">
         <div className="flex lg:flex-1">
-          <Link to="/" className="-m-1.5 p-1.5">
-            <span className="sr-only">Big Dream Farm</span>
-            <h3 className="text-4xl font-semibold"><span style={styleBr}>Boutique</span></h3>
-          </Link>
+          <div className="flex items-center justify-center">
+            <div>
+              <Link to="/" className="-m-1.5 p-1.5">
+                <span className="sr-only">Big Dream Farm</span>
+                <img src="/images/logo.png" className="h-14 w-14" alt="logo"/>
+              </Link>
+            </div>
+            <div className="ml-2">
+              <h3 className="uppercase font-bold tracking-tight">Soumppou</h3>
+              <h3 className="uppercase font-bold tracking-tight">Kaffo</h3>
+              <h3 className="uppercase font-bold tracking-tight">Farm</h3>
+            </div>
+          </div>
+          
         </div>
         <div className="flex lg:hidden">
           <button
