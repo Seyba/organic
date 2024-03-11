@@ -27,6 +27,9 @@ body {
   --color-carousel-bg: #1f1f20;
 
 }
+.green-one {
+  background-color: var(--color-green-1);
+}
 
 /*
 .container {

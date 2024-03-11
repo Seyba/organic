@@ -15,7 +15,7 @@ export const Navbar = () => {
 
   return (
     <header className="bg-white-100">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-2" aria-label="Global">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between lg:px-2" aria-label="Global">
         <div className="flex lg:flex-1">
           <div className="flex items-center justify-center">
             <div>

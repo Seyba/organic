@@ -41,7 +41,25 @@ export const Home = () => {
   };
   return (
     <div>
-      <h3>Big Dream LLC</h3>
+      <div className="grid grid-cols-2 gap-4 bg-green-900">
+        <div>
+          <h2>Fresh. Healthy. Oragnic</h2>
+          <p>Welcome to the source of the future of healthy eating</p>
+          <p>Organic, nutritious food, 
+            powered by the intersection of biotech and agriculture, 
+            delivered right to your doorstep.
+          </p>
+          <div>
+            <button>Start Eating Clean</button>
+            <button>Learn more</button>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img src="/images/veggies.jpg" alt="veggies"/>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
