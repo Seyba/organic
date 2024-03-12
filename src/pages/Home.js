@@ -41,10 +41,10 @@ export const Home = () => {
   };
   return (
     <div>
-      <section className="lg:grid grid-cols-2 place-items-center gap-8 green-one md:p-20 p-4">
+      <section className="lg:grid grid-cols-2 place-items-center gap-8 green-one md:p-20 px-4 py-16">
         <div>
           <div className="mb-8">
-            <h2 className="text-lg text-white font-bold uppercase py-4">Fresh. Healthy. Oragnic</h2>
+            <h2 className="text-lg text-white font-bold uppercase py-4">Fresh. Healthy. Organic.</h2>
             <h3 className="text-5xl text-white font-bold">Welcome to the source of the future of healthy eating</h3>
             <p className="text-base py-4 tracking-wide  text-white font-medium">Organic, nutritious food, 
               powered by the intersection of biotech and agriculture, 
