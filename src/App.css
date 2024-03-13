@@ -22,6 +22,7 @@ body {
   --color-131921: #131921; 
   --color-3b4149: #3b4149;
   --color-green-1: #08262a;
+  --color-green-2: #06925c;
   --color-bdbebeeb: #bdbebeeb;
   --color-20222e: #20222e;
   --color-carousel-bg: #1f1f20;
@@ -30,7 +31,12 @@ body {
 .green-one {
   background-color: var(--color-green-1);
 }
-
+.navbar-cart-btn:hover{
+  background-color: var(--color-green-2);
+  .navbar-cart{
+    color: #ffffff;
+  } 
+}
 /*
 .container {
   max-width: 1200px;

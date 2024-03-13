@@ -208,8 +208,8 @@ export const Navbar2 = () => {
             <header className="relative bg-white">
                 <nav aria-label="Top" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div className="border-b border-gray-200">
-                        <div className="flex h-16 items-center">
-                            <button
+                        <div className="flex justify-between h-16 items-center">
+                            {/* <button
                                 type="button"
                                 className="relative rounded-md bg-white p-2 text-gray-400 lg:hidden"
                                 onClick={() => setOpen(true)}
@@ -217,72 +217,81 @@ export const Navbar2 = () => {
                                 <span className="absolute -inset-0.5" />
                                 <span className="sr-only">Open menu</span>
                                 <Bars3Icon className="h-6 w-6" aria-hidden="true" />
-                            </button>
+                            </button> */}
 
                             {/* Logo */}
                             <div className="ml-4 flex lg:ml-0">
-                                <div className="flex">
+                                <div className="flex items-center">
                                     <Link to="/">
                                         <img src="/images/logo.png" alt="logo" className="h-14 w-14"/>
                                     </Link>
-                                    <div className="pl-2">
-                                        <h4 className="uppercase font-bold tracking-tight">Soumppou</h4>
-                                        <h4 className="uppercase font-bold tracking-tight">Kaffo</h4>
-                                        <h4 className="uppercase font-bold tracking-tight">Farm</h4>
+                                    <div className="pl-2 ">
+                                        <h4 className="text-xs uppercase font-bold tracking-tight">Soumppou</h4>
+                                        <h4 className="text-xs uppercase font-bold tracking-tight">Kaffo</h4>
+                                        <h4 className="text-xs uppercase font-bold tracking-tight">Farm</h4>
                                     </div>
                                 </div>
-                                
                             </div>
 
                         {/* Flyout menus */}
-                            <Popover.Group className="hidden lg:ml-8 lg:block lg:self-stretch">
+                            {/* <Popover.Group className="hidden lg:ml-8 lg:block lg:self-stretch">
                                 <div className="flex h-full space-x-8">
                                     
                                 </div>
-                            </Popover.Group>
+                            </Popover.Group> */}
 
-                            <div className="ml-auto flex items-center">
-                                <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
-                                    <Link to="/" className="text-sm font-medium text-gray-700 hover:text-gray-800">
+                            <div className="flex items-center">
+                                <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-center lg:space-x-6">
+                                    <Link to="/" className="text-lg font-semibold text-gray-700 hover:text-gray-800">
                                         Home
                                     </Link>
-                                    <span className="h-6 w-px bg-gray-200" aria-hidden="true" />
-                                    <Link to="/about" className="text-sm font-medium text-gray-700 hover:text-gray-800">
+                                    
+                                    <Link to="/about" className="text-lg font-semibold text-gray-700 hover:text-gray-800">
                                         About Us
                                     </Link>
-                                    <Link to="/shop" className="text-sm font-medium text-gray-700 hover:text-gray-800">
+                                    <Link to="/shop" className="text-lg font-semibold text-gray-700 hover:text-gray-800">
                                         Shop
                                     </Link>
-                                    <Link to="/contact" className="text-sm font-medium text-gray-700 hover:text-gray-800">
+                                    <Link to="/contact" className="text-lg font-semibold text-gray-700 hover:text-gray-800">
                                         Contact Us
                                     </Link>
-
                                 </div>
 
-                                <div className="hidden lg:ml-8 lg:flex">
+                                {/* <div className="hidden lg:ml-8 lg:flex">
                                     
-                                </div>
+                                </div> */}
 
                                 {/* Search */}
-                                <div className="flex lg:ml-6">
+                                {/* <div className="flex lg:ml-6">
                                     <a href="#" className="p-2 text-gray-400 hover:text-gray-500">
                                         <span className="sr-only">Search</span>
                                         <MagnifyingGlassIcon className="h-6 w-6" aria-hidden="true" />
                                     </a>
-                                </div>
+                                </div> */}
+                            </div>
+                            {/* Cart */}
+                            <div className="flow-root lg:ml-6">
+                                <button className="navbar-cart-btn border border-2 rounded-3xl py-1 px-4">
+                                    <Link to="/"  className="group -m-2 flex justify-between items-center p-2">
+                                        <div className="bg-green-950 rounded-full p-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#fff" className="w-6 h-6">
+                                                <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                            </svg>
+                                        </div>
+                                        <div className="ml-2">
+                                            <h2 className="navbar-cart leading-9 font-bold">Cart 0</h2>
+                                        </div>
 
-                                {/* Cart */}
-                                <div className="ml-4 flow-root lg:ml-6">
-                                    <a href="#" className="group -m-2 flex items-center p-2">
-                                        <ShoppingBagIcon
+                                        {/* <ShoppingBagIcon
                                         className="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500"
                                         aria-hidden="true"
                                         />
                                         <span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">3</span>
-                                        <span className="sr-only">items in cart, view bag</span>
-                                    </a>
-                                </div>
+                                        <span className="sr-only">items in cart, view bag</span> */}
+                                    </Link>
+                                </button>
                             </div>
+                            
                         </div>
                     </div>
                 </nav>
