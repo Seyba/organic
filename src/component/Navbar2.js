@@ -269,9 +269,20 @@ export const Navbar2 = () => {
                                     </a>
                                 </div> */}
                             </div>
+                            <div className="flow-root">
+                                <button
+                                    type="button"
+                                    className="relative rounded-md bg-white p-2 text-gray-400 lg:hidden"
+                                    onClick={() => setOpen(true)}
+                                >
+                                    <span className="absolute -inset-0.5" />
+                                    <span className="sr-only">Open menu</span>
+                                    <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+                                </button> 
+                            </div>
                             {/* Cart */}
-                            <div className="flow-root lg:ml-6">
-                                <button className="navbar-cart-btn border border-2 rounded-3xl py-1 px-4">
+                            <div className="flow-root hidden lg:block">
+                                <button className="navbar-cart-btn border border-1 rounded-3xl py-1 px-4">
                                     <Link to="/"  className="group -m-2 flex justify-between items-center p-2">
                                         <div className="bg-green-950 rounded-full p-2">
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#fff" className="w-6 h-6">
