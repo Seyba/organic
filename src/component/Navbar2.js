@@ -130,10 +130,6 @@ function classNames(...classes) {
 }
 export const Navbar2 = () => {
     const [open, setOpen] = useState(false)
-    useEffect(() => {
-        //const menuBar = document.getElementById('menu_bar')
-        //menuBar.classList.toggle('isOpen')
-    },[])
     return(
         <div className="bg-white">
             <Transition.Root show={open} as={Fragment}>
@@ -274,26 +270,13 @@ export const Navbar2 = () => {
                                 </div> */}
                             </div>
                             <div>
-                                {/* <button
-                                    type="button"
-                                    className="relative rounded-md bg-white p-2 text-gray-400 lg:hidden"
-                                    onClick={() => setOpen(true)}
-                                >
-                                    <span className="absolute -inset-0.5" />
-                                    <span className="sr-only">Open menu</span>
-                                    <Bars3Icon className="h-6 w-6" aria-hidden="true" />
-                                </button> */}
-
-                                <div className="hamburger_trigger">
-                                    <div id="menu_bar" 
-                                        onClick={''}
-                                        aria-controls="basic-navbar-nav" 
-                                    >
-                                        <div id="barOne" className="bar"></div>
-                                        <div id="barTwo" className="bar"></div>
-                                        <div id="barThree" className="bar"></div>
-                                    </div>
-                                </div> 
+                                <div className="lg:hidden">
+                                    <Link onClick={() => setOpen(true)}>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#08262a" className="w-8 h-8">
+                                            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                                        </svg>
+                                    </Link>
+                                </div>
                             </div>
                             {/* Cart */}
                             <div className="flow-root hidden lg:block">
