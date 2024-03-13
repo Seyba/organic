@@ -1,5 +1,6 @@
 import './App.css';
 import { Navbar} from './component/Navbar';
+import { Navbar2 } from './component/Navbar2';
 import {BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Home } from './pages/Home'
 import { About } from './pages/About'
@@ -17,7 +18,7 @@ function App() {
     <>
       <PortfolioContext.Provider value={{projectData}}>
         <BrowserRouter>
-          <Navbar/>
+          <Navbar2/>
           <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/about" element={<About />} />
