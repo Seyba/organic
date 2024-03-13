@@ -221,14 +221,17 @@ export const Navbar2 = () => {
 
                             {/* Logo */}
                             <div className="ml-4 flex lg:ml-0">
-                                <a href="#">
-                                <span className="sr-only">Your Company</span>
-                                <img
-                                    className="h-8 w-auto"
-                                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                                    alt=""
-                                />
-                                </a>
+                                <div className="flex">
+                                    <Link to="/">
+                                        <img src="/images/logo.png" alt="logo" className="h-14 w-14"/>
+                                    </Link>
+                                    <div className="pl-2">
+                                        <h4 className="uppercase font-bold tracking-tight">Soumppou</h4>
+                                        <h4 className="uppercase font-bold tracking-tight">Kaffo</h4>
+                                        <h4 className="uppercase font-bold tracking-tight">Farm</h4>
+                                    </div>
+                                </div>
+                                
                             </div>
 
                         {/* Flyout menus */}
@@ -247,9 +250,13 @@ export const Navbar2 = () => {
                                     <Link to="/about" className="text-sm font-medium text-gray-700 hover:text-gray-800">
                                         About Us
                                     </Link>
+                                    <Link to="/shop" className="text-sm font-medium text-gray-700 hover:text-gray-800">
+                                        Shop
+                                    </Link>
                                     <Link to="/contact" className="text-sm font-medium text-gray-700 hover:text-gray-800">
                                         Contact Us
                                     </Link>
+
                                 </div>
 
                                 <div className="hidden lg:ml-8 lg:flex">
