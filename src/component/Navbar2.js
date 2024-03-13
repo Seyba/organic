@@ -1,4 +1,4 @@
-import { Fragment, useState } from 'react'
+import { Fragment, useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { Dialog, Popover, Tab, Transition } from '@headlessui/react'
 import { Bars3Icon, MagnifyingGlassIcon, ShoppingBagIcon, XMarkIcon } from '@heroicons/react/24/outline'
@@ -130,6 +130,10 @@ function classNames(...classes) {
 }
 export const Navbar2 = () => {
     const [open, setOpen] = useState(false)
+    useEffect(() => {
+        //const menuBar = document.getElementById('menu_bar')
+        //menuBar.classList.toggle('isOpen')
+    },[])
     return(
         <div className="bg-white">
             <Transition.Root show={open} as={Fragment}>
@@ -220,7 +224,7 @@ export const Navbar2 = () => {
                             </button> */}
 
                             {/* Logo */}
-                            <div className="ml-4 flex lg:ml-0">
+                            <div className="ml-2 flex lg:ml-0">
                                 <div className="flex items-center">
                                     <Link to="/">
                                         <img src="/images/logo.png" alt="logo" className="h-14 w-14"/>
@@ -240,19 +244,19 @@ export const Navbar2 = () => {
                                 </div>
                             </Popover.Group> */}
 
-                            <div className="flex items-center">
+                            <div className="flex ml-24 items-center">
                                 <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-center lg:space-x-6">
-                                    <Link to="/" className="text-lg font-semibold text-gray-700 hover:text-gray-800">
+                                    <Link to="/" className="text-lg font-semibold text-green-800 hover:text-green-950">
                                         Home
                                     </Link>
                                     
-                                    <Link to="/about" className="text-lg font-semibold text-gray-700 hover:text-gray-800">
+                                    <Link to="/about" className="text-lg font-semibold text-green-800 hover:text-green-950">
                                         About Us
                                     </Link>
-                                    <Link to="/shop" className="text-lg font-semibold text-gray-700 hover:text-gray-800">
+                                    <Link to="/shop" className="text-lg font-semibold text-green-800 hover:text-green-950">
                                         Shop
                                     </Link>
-                                    <Link to="/contact" className="text-lg font-semibold text-gray-700 hover:text-gray-800">
+                                    <Link to="/contact" className="text-lg font-semibold text-green-800 hover:text-green-950">
                                         Contact Us
                                     </Link>
                                 </div>
@@ -269,8 +273,8 @@ export const Navbar2 = () => {
                                     </a>
                                 </div> */}
                             </div>
-                            <div className="flow-root">
-                                <button
+                            <div>
+                                {/* <button
                                     type="button"
                                     className="relative rounded-md bg-white p-2 text-gray-400 lg:hidden"
                                     onClick={() => setOpen(true)}
@@ -278,7 +282,18 @@ export const Navbar2 = () => {
                                     <span className="absolute -inset-0.5" />
                                     <span className="sr-only">Open menu</span>
                                     <Bars3Icon className="h-6 w-6" aria-hidden="true" />
-                                </button> 
+                                </button> */}
+
+                                <div className="hamburger_trigger">
+                                    <div id="menu_bar" 
+                                        onClick={''}
+                                        aria-controls="basic-navbar-nav" 
+                                    >
+                                        <div id="barOne" className="bar"></div>
+                                        <div id="barTwo" className="bar"></div>
+                                        <div id="barThree" className="bar"></div>
+                                    </div>
+                                </div> 
                             </div>
                             {/* Cart */}
                             <div className="flow-root hidden lg:block">

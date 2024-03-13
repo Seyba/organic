@@ -37,6 +37,41 @@ body {
     color: #ffffff;
   } 
 }
+
+/*?====================== HAMBURGER MENU START ===================*/
+#menu_bar {
+  width: 45px;
+  height: 45px;
+  margin: 50px 10px 20px 20px;
+  cursor: pointer;
+}
+.bar {
+  height: 3px;
+  width: 65%;
+  background-color: #000000;
+  display: block;
+  border-radius: 5px;
+  transition: all .3s ease-in-out;
+}
+#barOne{
+  transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+#barThree{
+  transform: translateY(5px);
+}
+
+.isOpen #barOne {
+  transform: translateY(2px) rotateZ(-45deg);
+}
+.isOpen #barTwo {
+  opacity: 0;
+}
+.isOpen #barThree {
+  transform: translateY(-4px) rotateZ(45deg);
+}
+
+/*?====================== HAMBURGER MENU END ===================*/
 /*
 .container {
   max-width: 1200px;
