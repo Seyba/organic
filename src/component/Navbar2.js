@@ -157,7 +157,7 @@ export const Navbar2 = () => {
                         leaveTo="-translate-x-full"
                         >
                             <Dialog.Panel className="relative flex w-full max-w-xs flex-col overflow-y-auto bg-white pb-12 shadow-xl">
-                                <div className="flex justify-between px-4 pb-2 pt-1">
+                                <div className="flex justify-between px-4 pb-2 py-2">
                                     <img src="/images/logo.png" className="h-14 w-14" alt="logo"/>
                                     <button
                                         type="button"
@@ -177,7 +177,7 @@ export const Navbar2 = () => {
                                 {/* Links */}
                                 <div className="space-y-6 border-t border-gray-200 px-4 py-6">
                                     <div className="flow-root">
-                                        <Link to="/">Home</Link>
+                                        <Link className="text-lg font-medium text-green-900" to="/">Home</Link>
                                     </div>
                                     <div className="flow-root">
                                         <Link to="/about">About Us</Link>
@@ -208,7 +208,7 @@ export const Navbar2 = () => {
                     </div>
                 </Dialog>
             </Transition.Root>
-            <header className="relative bg-white">
+            <header className="relative bg-white py-2">
                 <nav aria-label="Top" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div className="border-b border-gray-200">
                         <div className="flex justify-between h-16 items-center">
