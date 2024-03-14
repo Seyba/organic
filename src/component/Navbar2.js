@@ -157,7 +157,7 @@ export const Navbar2 = () => {
                         leaveTo="-translate-x-full"
                         >
                             <Dialog.Panel className="relative flex w-full max-w-xs flex-col overflow-y-auto bg-white pb-12 shadow-xl">
-                                <div className="flex justify-between px-4 pb-2 pt-5">
+                                <div className="flex justify-between px-4 pb-2 pt-1">
                                     <img src="/images/logo.png" className="h-14 w-14" alt="logo"/>
                                     <button
                                         type="button"
@@ -166,7 +166,10 @@ export const Navbar2 = () => {
                                     >
                                         <span className="absolute -inset-0.5" />
                                         <span className="sr-only">Close menu</span>
-                                        <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#08262a" className="w-8 h-8">
+                                            <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                        </svg>
+
                                     </button>
                                     
                                 </div>
