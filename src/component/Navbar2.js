@@ -169,35 +169,33 @@ export const Navbar2 = () => {
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#08262a" className="w-8 h-8">
                                             <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
                                         </svg>
-
-                                    </button>
-                                    
+                                    </button>                                    
                                 </div>
 
                                 {/* Links */}
                                 <div className="space-y-6 border-t border-gray-200 px-4 py-6">
                                     <div className="flow-root">
-                                        <Link className="text-lg font-medium text-green-900" to="/">Home</Link>
+                                        <Link className="text-lg font-medium text-green-900 hover:text-green-950" to="/">Home</Link>
                                     </div>
                                     <div className="flow-root">
-                                        <Link className="text-lg font-medium text-green-900" to="/about">About Us</Link>
+                                        <Link className="text-lg font-medium text-green-900 hover:text-green-950" to="/about">About Us</Link>
                                     </div>
                                     <div className="flow-root">
-                                        <Link className="text-lg font-medium text-green-900" to="/contact">Contact</Link>
+                                        <Link className="text-lg font-medium text-green-900 hover:text-green-950" to="/contact">Contact</Link>
                                     </div>
                                     <div className="flow-root">
-                                        <Link className="text-lg font-medium text-green-900" to="/shop">Shop</Link>
+                                        <Link className="text-lg font-medium text-green-900 hover:text-green-950" to="/shop">Shop</Link>
                                     </div>
                                 </div>
 
                                 <div className="space-y-6 border-t border-gray-200 px-4 py-6">
                                     <div className="flow-root">
-                                        <Link to="/" className="-m-2 block p-2 text-lg font-medium text-green-900">
+                                        <Link to="/" className="-m-2 block p-2 text-lg font-medium text-green-900 hover:text-green-950">
                                             Sign in
                                         </Link>
                                     </div>
                                     <div className="flow-root">
-                                        <Link to="/" className="-m-2 block p-2 text-lg font-medium text-green-900">
+                                        <Link to="/" className="-m-2 block p-2 text-lg font-medium text-green-900 hover:text-green-950">
                                             Create account
                                         </Link>
                                     </div>
@@ -210,7 +208,7 @@ export const Navbar2 = () => {
             </Transition.Root>
             <header className="relative bg-white py-2">
                 <nav aria-label="Top" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                    <div className="border-b border-gray-200">
+                    <div className="">
                         <div className="flex justify-between h-16 items-center">
                             {/* <button
                                 type="button"
