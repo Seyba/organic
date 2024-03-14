@@ -180,24 +180,24 @@ export const Navbar2 = () => {
                                         <Link className="text-lg font-medium text-green-900" to="/">Home</Link>
                                     </div>
                                     <div className="flow-root">
-                                        <Link to="/about">About Us</Link>
+                                        <Link className="text-lg font-medium text-green-900" to="/about">About Us</Link>
                                     </div>
                                     <div className="flow-root">
-                                        <Link to="/contact">Contact</Link>
+                                        <Link className="text-lg font-medium text-green-900" to="/contact">Contact</Link>
                                     </div>
                                     <div className="flow-root">
-                                        <Link to="/shop">Shop</Link>
+                                        <Link className="text-lg font-medium text-green-900" to="/shop">Shop</Link>
                                     </div>
                                 </div>
 
                                 <div className="space-y-6 border-t border-gray-200 px-4 py-6">
                                     <div className="flow-root">
-                                        <Link to="/" className="-m-2 block p-2 font-medium text-gray-900">
+                                        <Link to="/" className="-m-2 block p-2 text-lg font-medium text-green-900">
                                             Sign in
                                         </Link>
                                     </div>
                                     <div className="flow-root">
-                                        <Link to="/" className="-m-2 block p-2 font-medium text-gray-900">
+                                        <Link to="/" className="-m-2 block p-2 text-lg font-medium text-green-900">
                                             Create account
                                         </Link>
                                     </div>
