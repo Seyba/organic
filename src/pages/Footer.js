@@ -5,23 +5,16 @@ import { SmoothScrolling } from '../component/SmoothScrolling'
 export const Footer = () => {
   return (
     <footer className="footer">
-        <div className="">
-            <div className="md:grid grid-cols-2 gap-32">
+        {/* <div className="">
+            <div className="md:grid grid-cols-4 gap-32">
                 <div className="lg:mx-20">
                     <div className="py-4">
                         <SmoothScrolling>
-                            <h4 className="font-semibold text-3xl">Big Dream Farm LLC</h4>
+                            <h4 className="font-semibold text-white text-3xl">Big Dream Farm LLC</h4>
                         </SmoothScrolling>
                     </div>
                     <div>
-                        <SmoothScrolling>
-                            <p className="text-lg leading-8 py-4">                                
-                                Big Dream Farm was established in 2015 by talented farmers, 
-                                Kama Doucoure and Baba Jagana, 
-                                the journey began when founders Kama and Baba, 
-                                met up in 2017 and gather some community leaders to discuss about our supply in lambs during Eids.
-                            </p> 
-                        </SmoothScrolling>
+                        
                     </div>
                     <div className="footer__links py-4">
                         <SmoothScrolling>
@@ -91,11 +84,60 @@ export const Footer = () => {
                         </div>
                     </SmoothScrolling>
                 </div>
+                <div>
+                <h3 className="text-white">Three</h3>
+                </div>
+                <div >
+                    <h3 className="text-white">Four</h3>
+                </div>
             </div>
             <div className="lg:mx-20 footer__author-link py-4">
                 <p>
                     Copyright &copy; {new Date().getFullYear()} Big Dream Farm All Rights Reserved, designed by <Link to="https://github.com/Seyba">SEYBA</Link>
                 </p>
+            </div>
+        </div> */}
+        <div className="grid lg:grid-cols-4 grid-cols-2 md:grid-cols-3 gap-4">
+            <div>
+                <h4 className="text-white">One</h4>
+            </div>
+            <div>
+                <div>
+                    <h3 className="text-xl text-white font-semibold">Navigation</h3>
+                    <ul>
+                        <li className="py-2">
+                            <Link className="text-white text-base">Home</Link>
+                        </li>
+                        <li className="py-2">
+                            <Link className="text-white text-base">About Us</Link>
+                        </li>
+                        <li className="py-2">
+                            <Link className="text-white text-base">Our Mission</Link>
+                        </li>
+                        <li className="py-2">
+                            <Link className="text-white text-base">Our Products</Link>
+                        </li>
+                        <li className="py-2">
+                            <Link className="text-white text-base">Testimonials</Link>
+                        </li>
+                        <li className="py-2">
+                            <Link className="text-white text-base">Contact Us</Link>
+                        </li>
+                        <li className="py-2">
+                            <Link className="text-white text-base">Privacy Policy</Link>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h3 className="text-xl text-white font-semibold">Utility</h3>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h3 className="text-xl text-white font-semibold">Soumppou Kaffo Farm</h3>
+                </div>
             </div>
         </div>
     </footer>
