@@ -85,7 +85,7 @@ export const Footer = () => {
                     Copyright &copy; {new Date().getFullYear()} Big Dream Farm All Rights Reserved.
                 </p>
                 <p className="text-white">
-                    Designed by <Link to="https://github.com/Seyba">SEYBA</Link>.
+                    Designed by <Link className="text-slate-300 hover:text-slate-400 font-bold" to="https://github.com/Seyba">SEYBA</Link>.
                 </p>
             </div>
             <div className='flex md:justify-end items-center'>

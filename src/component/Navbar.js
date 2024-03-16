@@ -49,27 +49,59 @@ export const Navbar = () => {
                                 {/* Links */}
                                 <div className="space-y-6 border-t border-gray-200 px-4 py-6">
                                     <div className="flow-root">
-                                        <Link className="text-lg font-medium text-green-900 hover:text-green-950" to="/">Home</Link>
+                                        <Link 
+                                            className="text-lg font-medium text-green-900 hover:text-green-950" 
+                                            to="/"
+                                            onClick={() => setOpen(false)}
+                                        >
+                                            Home
+                                        </Link>
                                     </div>
                                     <div className="flow-root">
-                                        <Link className="text-lg font-medium text-green-900 hover:text-green-950" to="/about">About Us</Link>
+                                        <Link 
+                                            className="text-lg font-medium text-green-900 hover:text-green-950" 
+                                            to="/about"
+                                            onClick={() => setOpen(false)}
+                                        >
+                                            About Us
+                                        </Link>
                                     </div>
                                     <div className="flow-root">
-                                        <Link className="text-lg font-medium text-green-900 hover:text-green-950" to="/contact">Contact</Link>
+                                        <Link 
+                                            className="text-lg font-medium text-green-900 hover:text-green-950" 
+                                            to="/contact"
+                                            onClick={() => setOpen(false)}
+                                        >
+                                            Contact
+                                        </Link>
                                     </div>
                                     <div className="flow-root">
-                                        <Link className="text-lg font-medium text-green-900 hover:text-green-950" to="/shop">Shop</Link>
+                                        <Link 
+                                            className="text-lg font-medium text-green-900 hover:text-green-950" 
+                                            onClick={() => setOpen(false)} 
+                                            to="/shop"
+                                        >
+                                            Shop
+                                        </Link>
                                     </div>
                                 </div>
 
                                 <div className="space-y-6 border-t border-gray-200 px-4 py-6">
                                     <div className="flow-root">
-                                        <Link to="/" className="-m-2 block p-2 text-lg font-medium text-green-900 hover:text-green-950">
+                                        <Link 
+                                            to="/" 
+                                            className="-m-2 block p-2 text-lg font-medium text-green-900 hover:text-green-950"
+                                            onClick={() => setOpen(false)}
+                                        >
                                             Sign in
                                         </Link>
                                     </div>
                                     <div className="flow-root">
-                                        <Link to="/" className="-m-2 block p-2 text-lg font-medium text-green-900 hover:text-green-950">
+                                        <Link 
+                                            to="/" 
+                                            className="-m-2 block p-2 text-lg font-medium text-green-900 hover:text-green-950"
+                                            onClick={() => setOpen(false)}
+                                        >
                                             Create account
                                         </Link>
                                     </div>
