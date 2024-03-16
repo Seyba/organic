@@ -8,7 +8,7 @@ import SeyModal from '../component/SeyModal'
 export const About = () => {
   return (
     <>
-      <div className="banner-wrapper">
+      {/* <div className="banner-wrapper">
         <div className="banner">
           <div className="py-2">
             <h2 className="text-5xl font-semibold text-center py-2 animate-fade-down animate-once animate-duration-800 animate-ease-in-out">About Seyba</h2>
@@ -25,10 +25,10 @@ export const About = () => {
             </div>
           </div>
         </div>    
-      </div>
+      </div> */}
       <div>
         <div>
-        
+          <h2 className="text-center">About Page</h2>
         </div>
       </div>
     </>

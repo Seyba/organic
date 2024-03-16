@@ -81,7 +81,7 @@ export const Navbar = () => {
                 </Dialog>
             </Transition.Root>
             <header className="relative bg-white py-2">
-                <nav aria-label="Top" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <nav aria-label="Top" className="mx-auto px-4 max-w-7xl  sm:px-6 lg:px-8">
                     <div className="">
                         <div className="flex justify-between h-16 items-center">
                             {/* Logo */}

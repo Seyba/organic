@@ -4,7 +4,7 @@ import { SmoothScrolling } from '../component/SmoothScrolling'
 
 export const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="px-4 lg:px-24">
         {/* <div className="">
             <div className="md:grid grid-cols-4 gap-32">
                 <div className="lg:mx-20">
@@ -97,10 +97,12 @@ export const Footer = () => {
                 </p>
             </div>
         </div> */}
-        <div className="grid lg:grid-cols-4 grid-cols-2 md:grid-cols-3 gap-2">
+
+        
+        <div className="grid lg:grid-cols-4 grid-cols-1 md:grid-cols-3 gap-4">
             <div className="">
                 <div className="">
-                    <h3 className="text-xl text-white font-semibold mb-4">Big Dream Farm</h3>
+                    <h3 className="text-2xl text-white font-semibold mb-4">Big Dream Farm</h3>
                     <p className="text-sm leading-7 text-white">                                
                         Big Dream Farm was established in 2015 by talented farmers, 
                         Kama Doucoure and Baba Jagana, 
@@ -111,27 +113,27 @@ export const Footer = () => {
             </div>
             <div>
                 <div>
-                    <h3 className="text-xl text-white font-semibold mb-4">Navigation</h3>
+                    <h3 className="text-2xl text-white font-semibold mb-4">Navigation</h3>
                     <ul>
-                        <li className="py-2">
+                        <li className="py-1">
                             <Link className="text-white text-base hover:text-slate-400 ">Home</Link>
                         </li>
-                        <li className="py-2">
+                        <li className="py-1">
                             <Link className="text-white text-base hover:text-slate-400 ">About Us</Link>
                         </li>
-                        <li className="py-2">
+                        <li className="py-1">
                             <Link className="text-white text-base hover:text-slate-400 ">Our Mission</Link>
                         </li>
-                        <li className="py-2">
+                        <li className="py-1">
                             <Link className="text-white text-base hover:text-slate-400 ">Our Products</Link>
                         </li>
-                        <li className="py-2">
+                        <li className="py-1">
                             <Link className="text-white text-base hover:text-slate-400 ">Testimonials</Link>
                         </li>
-                        <li className="py-2">
+                        <li className="py-1">
                             <Link className="text-white text-base hover:text-slate-400 ">Contact Us</Link>
                         </li>
-                        <li className="py-2">
+                        <li className="py-1">
                             <Link className="text-white text-base hover:text-slate-400 ">Privacy Policy</Link>
                         </li>
                     </ul>
@@ -139,19 +141,19 @@ export const Footer = () => {
             </div>
             <div>
                 <div>
-                    <h3 className="text-xl text-white font-semibold mb-4">Utility</h3>
+                    <h3 className="text-2xl text-white font-semibold mb-4">Utility</h3>
 
                     <ul>
-                        <li className="py-2">
+                        <li className="py-1">
                             <Link className="text-white hover:text-slate-400 text-base">Get Started</Link>
                         </li>
-                        <li className="py-2">
+                        <li className="py-1">
                             <Link className="text-white text-base hover:text-slate-400 ">Style Guide</Link>
                         </li>
-                        <li className="py-2">
+                        <li className="py-1">
                             <Link className="text-white text-base hover:text-slate-400 ">License</Link>
                         </li>
-                        <li className="py-2">
+                        <li className="py-1">
                             <Link className="text-white text-base hover:text-slate-400 ">Take Farm Tour</Link>
                         </li>
                     </ul>
@@ -159,7 +161,7 @@ export const Footer = () => {
             </div>
             <div>
                 <div>
-                    <h3 className="text-xl text-white font-semibold mb-4">Soumppou Kaffo Farm</h3>
+                    <h3 className="text-2xl text-white font-semibold mb-4">Soumppou Kaffo Farm</h3>
                     <h4>
                         <a className="text-white py-2" href="tel: +17189745933">+1 (718) 974 5933</a>
                     </h4>
@@ -178,7 +180,7 @@ export const Footer = () => {
                     Copyright &copy; {new Date().getFullYear()} Big Dream Farm All Rights Reserved.
                 </p>
                 <p className="text-white">
-                    designed by <Link to="https://github.com/Seyba">SEYBA</Link>
+                    Designed by <Link to="https://github.com/Seyba">SEYBA</Link>.
                 </p>
             </div>
             <div className='flex md:justify-end items-center'>
