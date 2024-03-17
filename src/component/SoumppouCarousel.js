@@ -41,15 +41,29 @@ export const SoumppouCarousel = () => {
                     <img 
                         src="/images/intense-chicken-stare.jpg" 
                         alt=""
-                        className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
+                        className="absolute inset-0 brightness-50 -z-10 h-full w-full object-cover object-right md:object-center"
                     />
-                    <div>
+                    <div className="text-white text-center">
+                        <div>
+                            <p className="text-xl tracking-tight font-semibold">100% organic foods in the market</p>
+                        </div>
+                        <div className="py-6">
+                            <h3 className="text-6xl font-bold">Halal Meat Source and Vegetable</h3>
+                            <p className="text-xl leading-9 font-semibold">Fresh, Organic and Seasonal Food for a healthy lifestyle</p>
+                        </div>
+                        <div className="flex justify-center mt-3">
+                            <button className="border border-1 rounded-3xl py-3 px-10 mr-2">Shop Now</button>
+                            <button className="border border-1 rounded-3xl py-3 px-10 ml-2">Contact Us</button>
+                        </div>
+                    </div>
+
+                    {/* <div>
                         <h4 className="md:text-4xl md:px-20 lg:px-64 xl:px-96 px-4 text-lg font-normal ">❝{data[0].msg}</h4>
                     </div>
                     <div className="mt-4">
                         <p className="md:text-lg text-sm text-zinc-500 font-medium tracking-wide">{data[0].customer}</p>
                         <p className="md:text-sm text-xs text-zinc-500 font-bold tracking-tighter">{data[0].title}</p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <div>
@@ -58,17 +72,30 @@ export const SoumppouCarousel = () => {
                         <img 
                             src="/images/bunch-of-tomatoes.jpg" 
                             alt=""
-                            className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
+                            className="absolute inset-0 brightness-50 -z-10 h-full w-full object-cover object-right md:object-center"
                         />
                     </div>
-                    <div className="carousel-img2"/>
-                    <div className="">
+
+                    <div className="text-white text-center">
+                        <div>
+                            <p className="text-xl tracking-tight font-semibold">100% organic foods in the market</p>
+                        </div>
+                        <div className="py-6">
+                            <h3 className="text-6xl font-bold">Halal Meat Source and Vegetable</h3>
+                            <p className="text-xl leading-9 font-semibold">Fresh, Organic and Seasonal Food for a healthy lifestyle</p>
+                        </div>
+                        <div className="flex justify-center mt-3">
+                            <button className="border border-1 rounded-3xl py-3 px-10 mr-2">Shop Now</button>
+                            <button className="border border-1 rounded-3xl py-3 px-10 ml-2">Contact Us</button>
+                        </div>
+                    </div>
+                    {/* <div className="">
                         <h4 className="md:text-4xl md:px-20 lg:px-64 xl:px-96 px-4 text-lg font-normal">❝{data[1].msg}</h4>
                     </div>
                     <div className="mt-4">
                         <p className="md:text-lg text-sm text-zinc-500 font-medium tracking-wide">{data[1].customer}</p>
                         <p className="md:text-sm text-xs text-zinc-500 font-bold tracking-tighter">{data[1].title}</p>
-                    </div>
+                    </div> */}
                     
                 </div>
             </div>
@@ -78,17 +105,33 @@ export const SoumppouCarousel = () => {
                         <img 
                             src="/images/bg.jpeg" 
                             alt=""
-                            className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
+                            className="absolute inset-0 brightness-50 -z-10 h-full w-full object-cover object-right md:object-center"
                         />
                     </div>
-                    <div className="carousel-img3"/> 
-                    <div>
-                        <h4 className="md:text-4xl md:px-20 lg:px-64 xl:px-96 px-4 text-lg font-normal ">❝{data[2].msg}</h4>
+
+                    <div className="text-white text-center">
+                        <div>
+                            <p className="text-xl tracking-tight font-semibold">100% organic foods in the market</p>
+                        </div>
+                        <div className="py-6">
+                            <h3 className="text-6xl font-bold">Halal Meat Source and Vegetable</h3>
+                            <p className="text-xl leading-9 font-semibold">Fresh, Organic and Seasonal Food for a healthy lifestyle</p>
+                        </div>
+                        <div className="flex justify-center mt-3">
+                            <button className="border border-1 rounded-3xl py-3 px-10 mr-2">Shop Now</button>
+                            <button className="border border-1 rounded-3xl py-3 px-10 ml-2">Contact Us</button>
+                        </div>
                     </div>
+                    {/* <div>
+                        <h4 className="md:text-4xl text-white md:px-20 lg:px-64 xl:px-96 px-4 text-lg font-normal ">❝{data[2].msg}</h4>
+                    </div>
+                    <button className="text-white">
+                        shop now
+                    </button>
                     <div className="mt-4">
                         <p className="md:text-lg text-sm text-zinc-500 font-medium tracking-wide">{data[2].customer}</p>
                         <p className="md:text-sm text-xs text-zinc-500 font-bold tracking-tighter">{data[2].title}</p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             
