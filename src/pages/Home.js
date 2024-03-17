@@ -1,10 +1,12 @@
 import React, {useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { SeyCarousel } from '../component/SeyCarousel'
-import { Carousel } from 'antd';
+import { TECarousel, TECarouselItem } from "tw-elements-react";
+//import { Carousel } from 'antd';
 import { ContactForm } from '../component/ContactForm'
 import { Blog } from '../component/Blog'
 import { SmoothScrolling } from '../component/SmoothScrolling';
+import { TCarousel } from './TCarousel';
 
 export const Home = () => {
   const [rightText, setRightText] = useState('')
@@ -41,6 +43,7 @@ export const Home = () => {
   };
   return (
     <div>
+      <TCarousel/>
       <section className="lg:grid grid-cols-2 place-items-center gap-8 green-one md:p-20 px-4 py-16">
         <div>
           <div className="mb-8">
