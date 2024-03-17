@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from "react";
 import { Carousel } from 'antd';
+const img1 = process.env.PUBLIC_URL + '/images/intense-chicken-stare.jpg'
 
-export const SeyCarousel = () => {
+export const SoumppouCarousel = () => {
     const data = [
        {
             id: 'a2c', 
@@ -31,13 +32,17 @@ export const SeyCarousel = () => {
         color: '#fff',
         lineHeight: '16px',
         textAlign: 'center',
-        background: '#1f1f20',
+        background: {img1}
     }
     return(
         <Carousel autoplay > 
             <div>
-                <div style={antContent}>
-                    <div className="carousel-img"/>
+                <div className="relative isolate overflow-hidden py-24 md:py-64 sm:py-32">
+                    <img 
+                        src="/images/intense-chicken-stare.jpg" 
+                        alt=""
+                        className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
+                    />
                     <div>
                         <h4 className="md:text-4xl md:px-20 lg:px-64 xl:px-96 px-4 text-lg font-normal ">❝{data[0].msg}</h4>
                     </div>
@@ -48,7 +53,14 @@ export const SeyCarousel = () => {
                 </div>
             </div>
             <div>
-                <div style={antContent}>
+                <div className="relative isolate overflow-hidden py-24 md:py-64 sm:py-32">
+                    <div>
+                        <img 
+                            src="/images/bunch-of-tomatoes.jpg" 
+                            alt=""
+                            className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
+                        />
+                    </div>
                     <div className="carousel-img2"/>
                     <div className="">
                         <h4 className="md:text-4xl md:px-20 lg:px-64 xl:px-96 px-4 text-lg font-normal">❝{data[1].msg}</h4>
@@ -61,7 +73,14 @@ export const SeyCarousel = () => {
                 </div>
             </div>
             <div>
-                <div style={antContent}>
+                <div className="relative isolate overflow-hidden py-24 md:py-64 sm:py-32">
+                    <div>
+                        <img 
+                            src="/images/bg.jpeg" 
+                            alt=""
+                            className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
+                        />
+                    </div>
                     <div className="carousel-img3"/> 
                     <div>
                         <h4 className="md:text-4xl md:px-20 lg:px-64 xl:px-96 px-4 text-lg font-normal ">❝{data[2].msg}</h4>
