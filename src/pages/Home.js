@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { SoumppouCarousel } from '../component/SoumppouCarousel'
 //import { Carousel } from 'antd';
 import { ContactForm } from '../component/ContactForm'
+import { ContactPartial } from '../component/ContactPartial'
 import { Blog } from '../component/Blog'
 import { SmoothScrolling } from '../component/SmoothScrolling';
 
@@ -63,6 +64,7 @@ export const Home = () => {
           </div>
         </div>
       </section>
+      <ContactPartial/>
     </div>
   )
 }
