@@ -31,6 +31,9 @@ body {
 .green-one {
   background-color: var(--color-green-1);
 }
+.green-one-ft {
+  color: var(--color-green-1);
+}
 .navbar-cart-btn:hover{
   background-color: var(--color-green-2);
   .navbar-cart{
