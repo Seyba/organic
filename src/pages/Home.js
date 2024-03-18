@@ -52,8 +52,8 @@ export const Home = () => {
               delivered right to your doorstep.
             </p>
             <div className="">
-              <button className="bg-white py-3 px-6 rounded-3xl text-lg  tracking-tight font-medium mr-4 mb-4">Start Eating Clean</button>
-              <button className="border-2 border-slate-100 py-3 px-6 rounded-3xl text-lg text-slate-100 tracking-tight font-medium">Learn more</button>
+              <button className="border border-1 hover:bg-white hover:text-slate-950 border-slate-100 py-3 px-6 rounded-3xl text-lg text-white  tracking-tight font-medium mr-4 mb-4">Start Eating Clean</button>
+              <button className="border border-1 hover:bg-white hover:text-slate-950 border-slate-100 py-3 px-12 rounded-3xl text-lg text-slate-100 tracking-tight font-medium">Learn more</button>
             </div>
           </div>
         </div>
