@@ -52,8 +52,8 @@ export const SoumppouCarousel = () => {
                             <p className="md:text-xl text-lg leading-9 font-semibold">Fresh, Organic and Seasonal Food for a healthy lifestyle</p>
                         </div>
                         <div className="flex justify-center mt-3">
-                            <button className="border border-1 rounded-3xl py-3 px-10 mr-2 hover:bg-slate-100 hover:text-slate-900">Shop Now</button>
-                            <button className="border border-1 rounded-3xl py-3 px-10 ml-2 hover:bg-slate-100 hover:text-slate-900">Contact Us</button>
+                            <button className="border border-1 rounded-3xl py-2 md:py-3 px-4 md:px-10 mr-1 hover:bg-slate-100 hover:text-slate-900">Shop Now</button>
+                            <button className="border border-1 rounded-3xl py-2 md:py-3 px-4 md:px-10 ml-1 hover:bg-slate-100 hover:text-slate-900">Contact Us</button>
                         </div>
                     </div>
 
@@ -85,8 +85,8 @@ export const SoumppouCarousel = () => {
                             <p className="md:text-xl text-lg leading-9 font-semibold">Fresh, Organic and Seasonal Food for a healthy lifestyle</p>
                         </div>
                         <div className="flex justify-center mt-3">
-                            <button className="border border-1 rounded-3xl py-3 px-10 mr-2 hover:bg-slate-100 hover:text-slate-900">Shop Now</button>
-                            <button className="border border-1 rounded-3xl py-3 px-10 ml-2 hover:bg-slate-100 hover:text-slate-900">Contact Us</button>
+                            <button className="border border-1 rounded-3xl py-2 md:py-3 px-4 md:px-10 mr-1 hover:bg-slate-100 hover:text-slate-900">Shop Now</button>
+                            <button className="border border-1 rounded-3xl py-2 md:py-3 px-4 md:px-10 ml-1 hover:bg-slate-100 hover:text-slate-900">Contact Us</button>
                         </div>
                     </div>
                     {/* <div className="">
@@ -118,8 +118,8 @@ export const SoumppouCarousel = () => {
                             <p className="md:text-xl text-lg leading-9 font-semibold">Fresh, Organic and Seasonal Food for a healthy lifestyle</p>
                         </div>
                         <div className="flex justify-center mt-3">
-                            <button className="border border-1 rounded-3xl py-3 px-10 mr-2 hover:bg-slate-100 hover:text-slate-900">Shop Now</button>
-                            <button className="border border-1 rounded-3xl py-3 px-10 ml-2 hover:bg-slate-100 hover:text-slate-900">Contact Us</button>
+                            <button className="border border-1 rounded-3xl py-2 md:py-3 px-4 md:px-10 mr-1 hover:bg-slate-100 hover:text-slate-900">Shop Now</button>
+                            <button className="border border-1 rounded-3xl py-2 md:py-3 px-4 md:px-10 ml-1 hover:bg-slate-100 hover:text-slate-900">Contact Us</button>
                         </div>
                     </div>
                     {/* <div>
