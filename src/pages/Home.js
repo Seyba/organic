@@ -6,6 +6,7 @@ import { ContactForm } from '../component/ContactForm'
 import { ContactPartial } from '../component/ContactPartial'
 import { Blog } from '../component/Blog'
 import { SmoothScrolling } from '../component/SmoothScrolling';
+import { HomePartial } from '../component/HomePartial'
 
 export const Home = () => {
   const [rightText, setRightText] = useState('')
@@ -65,6 +66,7 @@ export const Home = () => {
         </div>
       </section>
       <ContactPartial/>
+      <HomePartial/>
     </div>
   )
 }
