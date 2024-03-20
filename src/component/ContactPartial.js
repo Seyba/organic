@@ -1,7 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import { SmoothScrolling } from './SmoothScrolling'
-
 export const ContactPartial = () => {
   return (
     <div className="relative isolate overflow-hidden py-14 md:py-24 sm:py-12">
