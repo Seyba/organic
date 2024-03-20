@@ -7,6 +7,7 @@ import { ContactPartial } from '../component/ContactPartial'
 import { Blog } from '../component/Blog'
 import { SmoothScrolling } from '../component/SmoothScrolling';
 import { HomePartial } from '../component/HomePartial'
+import { Testimonials } from '../component/Testimonials'
 
 export const Home = () => {
   const [rightText, setRightText] = useState('')
@@ -67,6 +68,7 @@ export const Home = () => {
       </section>
       <ContactPartial/>
       <HomePartial/>
+      <Testimonials/>
     </div>
   )
 }
