@@ -71,9 +71,39 @@ export const Home = () => {
       <Testimonials/>
       <section>
         <div className="grid md:grid-cols-2 gap-0">
-          <div className="bg-green-900">
+          <div className="bg-gray-200 grid place-items-center md:grid-cols-2 gap-2">
+            <div className="">
+              <div>
+                <img src="/images/crop.png" alt="crop" className="h-16 w-16"/>
+              </div>
+              <div>
+                <h3>23+</h3>
+                <h4>Products</h4>
+              </div>
+              <div>
+                <img src="/images/stars.png" alt="stars" className="h-16 w-16"/>
+              </div>
+              <div>
+                <h3>10+</h3>
+                <h4>Years of Experience</h4>
+              </div>
+            </div>
+            
             <div>
-              <img src="/images/crop.png" className="h-12 w-12" alt=""/>
+            <div>
+                <img src="/images/satisfaction.png" alt="satisfaction" className="h-16 w-16"/>
+              </div>
+              <div>
+                <h3>1500+</h3>
+                <h4>Satisfied Clients</h4>
+              </div>
+              <div>
+                <img src="/images/team.png" alt="team" className="h-16 w-16"/>
+              </div>
+              <div>
+                <h3>55+</h3>
+                <h4>Local Members</h4>
+              </div>
             </div>
           </div>
           <div className="bg-gray-150">
@@ -83,7 +113,6 @@ export const Home = () => {
             </div>
             <div>
               <h3>A farm that is unlike any other </h3>
-
               <p>
                 Lorem ipsum dolor sit amet, 
                 consectetur adipiscing elit. 
