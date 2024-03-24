@@ -40,7 +40,9 @@ body {
     color: #ffffff;
   } 
 }
-
+.ant-carousel ul.slick-dots.slick-dots-bottom li {
+  display: none;
+}
 /*?=================================== FOOTER ========================================*/
 footer{
   background-color: var(--color-green-1);
