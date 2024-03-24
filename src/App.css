@@ -23,6 +23,7 @@ body {
   --color-3b4149: #3b4149;
   --color-green-1: #08262a;
   --color-green-2: #06925c;
+  --color-green-3: #278060;
   --color-bdbebeeb: #bdbebeeb;
   --color-20222e: #20222e;
   --color-carousel-bg: #1f1f20;
@@ -30,6 +31,9 @@ body {
 }
 .green-one {
   background-color: var(--color-green-1);
+}
+.green-three {
+  background-color: var(--color-green-3);
 }
 .green-one-ft {
   color: var(--color-green-1);
@@ -40,6 +44,8 @@ body {
     color: #ffffff;
   } 
 }
+
+/*? ================================== CAROUSEL SLICK DOTS =======================*/
 .ant-carousel ul.slick-dots.slick-dots-bottom li {
   display: none;
 }

@@ -68,10 +68,9 @@ export const Home = () => {
       </section>
       <ContactPartial/>
       <HomePartial/>
-      <Testimonials/>
       <section>
         <div className="grid md:grid-cols-2 gap-0">
-          <div className="bg-gray-200 grid place-items-center md:grid-cols-2 gap-2">
+          <div className="green-three grid place-items-center md:grid-cols-2 gap-2">
             <div className="">
               <div className="rounded-full bg-gray-100 h-10 w-10">
                 <img src="/images/crop.png" alt="crop" className="h-8 w-8"/>
@@ -150,8 +149,6 @@ export const Home = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
                   </svg>
                 </div>
-                
-
               </button>
             </div>
             
