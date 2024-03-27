@@ -24,7 +24,7 @@ body {
   --color-green-1: #08262a;
   --color-green-2: #06925c;
   --color-green-3: #278060;
-  --color-green-4: #174b38;
+  --color-green-4: #227456;
   --color-bdbebeeb: #bdbebeeb;
   --color-20222e: #20222e;
   --color-carousel-bg: #1f1f20;
@@ -32,6 +32,9 @@ body {
 }
 .green-one {
   background-color: var(--color-green-1);
+}
+.green-two {
+  background-color: var(--color-green-2);
 }
 .green-three {
   background-color: var(--color-green-3);
