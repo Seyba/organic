@@ -97,7 +97,7 @@ export const Home = () => {
                   </svg>
                 </div>
               </div>
-              <div className="flex justify-center">
+              <div className="flex justify-center pb-6 md:pb-12">
                 <div>
                   <h3 className="text-white mt-2 text-center text-5xl font-semibold">23+</h3>
                   <h4 className="text-white mb-2 text-center text-xl tracking-tight font-light uppercase">Products</h4>
@@ -134,7 +134,7 @@ export const Home = () => {
                   {/* <img src="/images/satisfaction.png" alt="satisfaction" className="h-16 w-16"/> */}
                 </div>
               </div>
-              <div className="flex justify-center">
+              <div className="flex justify-center pb-6 md:pb-12">
                 <div>
                   <h3 className="text-white text-center mt-2 text-5xl font-semibold">1500+</h3>
                   <h4 className="text-white mb-2 text-center text-xl tracking-tight font-light uppercase">Satisfied Clients</h4>
@@ -166,32 +166,33 @@ export const Home = () => {
               </div>
             </div>
           </div>
-          <div className="bg-gray-150">
-            <div className="flex items-center">
-              <img src="/images/logo.png" alt="logo" className="h-8 w-8"/>
-              <h3 className="text-lg">Why Big Dream Farm</h3>
-            </div>
+          <div className="bg-gray-50 flex p-24 justify-center">
             <div>
-              <h3>A farm that is unlike any other </h3>
-              <p>
-                Lorem ipsum dolor sit amet, 
-                consectetur adipiscing elit. 
-                Eleifend turpis lacus ornare quam non. 
-                Elementum tellus elit adipiscing iaculis urna, neque. 
-                Metus ultrices diam sed in. At lacus, nibh aliquam vel. 
-                Vel quis est turpis auctor cras lacus et, mi a.
-              </p>
+              <div className="flex items-center mb-4">
+                <img src="/images/logo.png" alt="logo" className="h-8 w-8"/>
+                <h3 className=" text-2xl font-thin  uppercase pl-2">Why Big Dream Farm</h3>
+              </div>
+              <div>
+                <h3 className="text-2xl font-semibold pb-2">A farm that is unlike any other </h3>
+                <p className="text-base font-extralight text-gray-600 leading-8">
+                  Lorem ipsum dolor sit amet, 
+                  consectetur adipiscing elit. 
+                  Eleifend turpis lacus ornare quam non. 
+                  Elementum tellus elit adipiscing iaculis urna, neque. 
+                  Metus ultrices diam sed in. At lacus, nibh aliquam vel. 
+                  Vel quis est turpis auctor cras lacus et, mi a.
+                </p>
 
-              <button className="flex justify-between items-center bg-green-300 py-3 rounded-3xl px-6">
-                Learn more 
-                <div className="ml-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-                  </svg>
-                </div>
-              </button>
+                <button className="flex justify-between items-center bg-green-300 py-3 rounded-3xl px-6">
+                  Learn more 
+                  <div className="ml-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                    </svg>
+                  </div>
+                </button>
+              </div>
             </div>
-            
           </div>
         </div>
       </section>
