@@ -170,11 +170,11 @@ export const Home = () => {
             <div>
               <div className="flex items-center mb-4">
                 <img src="/images/logo.png" alt="logo" className="h-8 w-8"/>
-                <h3 className=" text-2xl font-thin  uppercase pl-2">Why Big Dream Farm</h3>
+                <h3 className=" text-2xl text-gray-700 font-thin  uppercase pl-2">Why Big Dream Farm</h3>
               </div>
               <div>
                 <h3 className="text-2xl font-semibold pb-2">A farm that is unlike any other </h3>
-                <p className="text-base font-extralight text-gray-600 leading-8">
+                <p className="text-base font-extralight tracking-wide text-gray-600 leading-8 my-6">
                   Lorem ipsum dolor sit amet, 
                   consectetur adipiscing elit. 
                   Eleifend turpis lacus ornare quam non. 
@@ -182,15 +182,16 @@ export const Home = () => {
                   Metus ultrices diam sed in. At lacus, nibh aliquam vel. 
                   Vel quis est turpis auctor cras lacus et, mi a.
                 </p>
-
-                <button className="flex justify-between items-center bg-green-300 py-3 rounded-3xl px-6">
-                  Learn more 
-                  <div className="ml-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-                    </svg>
-                  </div>
-                </button>
+                <Link to="/">
+                  <button className="flex justify-between items-center green-two py-3 rounded-3xl px-6">
+                    Learn more 
+                    <div className="ml-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                      </svg>
+                    </div>
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
