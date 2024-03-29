@@ -183,7 +183,7 @@ export const Home = () => {
                   Vel quis est turpis auctor cras lacus et, mi a.
                 </p>
                 <Link to="/">
-                  <button className="flex justify-between items-center green-two py-3 rounded-3xl px-6">
+                  <button className="flex justify-between items-center hover:green-four green-two py-2 text-white text-lg rounded-3xl px-6">
                     Learn more 
                     <div className="ml-4">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
