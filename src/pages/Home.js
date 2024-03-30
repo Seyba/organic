@@ -1,7 +1,7 @@
 import React, {useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { SoumppouCarousel } from '../component/SoumppouCarousel'
-//import { Carousel } from 'antd';
+import { Collapse } from 'antd'
 import { ContactForm } from '../component/ContactForm'
 import { ContactPartial } from '../component/ContactPartial'
 import { Blog } from '../component/Blog'
@@ -15,8 +15,28 @@ export const Home = () => {
 
   const text = ['innovative', 'talented','powerful','creative']
   const msg = ['intelligent', 'skilled', 'dependable','collaborative']
-
-
+    
+  const answers = 'Big Dream Farm grows eggplant, okra, carrot, tomatoes and yams'
+  const items = [
+    {
+      key: '1',
+      label: 'This is panel header 1',
+      children: <p>{answers}</p>,
+    },
+    {
+      key: '2',
+      label: 'This is panel header 2',
+      children: <p>{answers}</p>,
+    },
+    {
+      key: '3',
+      label: 'This is panel header 3',
+      children: <p>{answers}</p>,
+    },
+  ];
+  const onChange = (key) => {
+    console.log(key)
+  }
   useEffect(() => {
     const interval = setInterval(() => {
       const idx = Math.floor(Math.random() * text.length)
@@ -68,6 +88,20 @@ export const Home = () => {
       </section>
       <ContactPartial/>
       <HomePartial/>
+      <section>
+        <div>
+          <div>
+            <h2>Got Questions? We've Got Answers</h2>
+            <p>Common inquiries about our service, organic food, and more, answered.</p>
+          </div>
+          <Collapse
+            items={items}
+            default={['1']}
+            onChange={onChange}
+          />
+          
+        </div>
+      </section>
       <section>
         <div className="grid md:grid-cols-2 gap-0">
 
