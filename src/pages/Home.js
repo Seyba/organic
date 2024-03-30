@@ -88,18 +88,155 @@ export const Home = () => {
       </section>
       <ContactPartial/>
       <HomePartial/>
-      <section>
-        <div>
-          <div>
-            <h2>Got Questions? We've Got Answers</h2>
-            <p>Common inquiries about our service, organic food, and more, answered.</p>
+      <section className="bg-gray-50 py-20 px-16">
+        <div className="mb-16">
+          <div className="text-center">
+            <h2 className="text-5xl font-bold">Got Questions? We've Got Answers</h2>
+            <p className="text-lg mt-4 font-thin">Common inquiries about our service, organic food, and more, answered.</p>
           </div>
-          <Collapse
-            items={items}
-            default={['1']}
-            onChange={onChange}
-          />
-          
+        </div>
+        <div>
+          <div className="flex">
+            <div>
+              <Link className="hidden pr-12">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+              </Link>
+              <Link className=" pr-12">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                </svg>
+              </Link>
+            </div>
+            <div>
+              <h4 className="text-xl font-semibold">What foods are grown by Soumppou Kaffo Farm?</h4>
+              <p className="hidden">
+                Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. 
+                Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. 
+                Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. 
+                Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor.
+              </p>
+            </div>
+          </div>
+          <div className="flex ">
+            <div className="">
+              <Link className="hidden pr-12">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+              </Link>
+              <Link className="pr-12">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                </svg>
+              </Link>
+            </div>
+            <div>
+              <h4 className="text-xl font-semibold">How much does the delivery cost?</h4>
+              <p className="hidden">
+                Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. 
+                Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. 
+                Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. 
+                Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor.
+              </p>
+            </div>
+              
+          </div>
+          <div className="flex ">
+            <div>
+              <Link className="hidden pr-12">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+              </Link>
+              <Link className=" pr-12">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                </svg>
+              </Link>
+            </div>
+            <div>
+              <h4 className="text-xl font-semibold">How long does the delivery take?</h4>
+              <p className="hidden">
+                Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. 
+                Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. 
+                Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. 
+                Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor.
+              </p>
+            </div>
+          </div>
+          <div className="flex ">
+            <div className="">
+              <Link className="hidden pr-12">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+              </Link>
+              <Link className="pr-12">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                </svg>
+              </Link>
+            </div>
+              <div>
+                <h4 className="text-xl font-semibold">How much does the delivery cost?</h4>
+                <p className="hidden">
+                  Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. 
+                  Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. 
+                  Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. 
+                  Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor.
+                </p>
+              </div>
+              
+          </div>
+          <div className="flex ">
+            <div className="">
+              <Link className="hidden pr-12">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+              </Link>
+              <Link className="pr-12">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                </svg>
+              </Link>
+            </div>
+              <div>
+                <h4 className="text-xl font-semibold">How early to get lamb delivered on Eid?</h4>
+                <p className="hidden">
+                  Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. 
+                  Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. 
+                  Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. 
+                  Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor.
+                </p>
+              </div>
+          </div>
+          <div className="flex ">
+            <div className="">
+              <Link className="hidden pr-12">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+              </Link>
+              <Link className="pr-12">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                </svg>
+              </Link>
+            </div>
+              <div>
+                <h4 className="text-xl font-semibold">How lamb orders are porcessed?</h4>
+                <p className="hidden">
+                  Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. 
+                  Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. 
+                  Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. 
+                  Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor.
+                </p>
+              </div>
+              
+          </div>
         </div>
       </section>
       <section>
