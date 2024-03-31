@@ -12,7 +12,13 @@ import { Testimonials } from '../component/Testimonials'
 export const Home = () => {
   const [rightText, setRightText] = useState('')
   const [msgIdx, setMsgIdx] = useState(0)
-  const [showAnswer, setShowAnswer] = useState(false)
+  const [showAnswerOne, setShowAnswerOne] = useState(false)
+  const [showAnswerTwo, setShowAnswerTwo] = useState(false)
+  const [showAnswerThree, setShowAnswerThree] = useState(false)
+  const [showAnswerFour, setShowAnswerFour] = useState(false)
+  const [showAnswerFive, setShowAnswerFive] = useState(false)
+  const [showAnswerSix, setShowAnswerSix] = useState(false)
+  const [showAnswerSeven, setShowAnswerSeven] = useState(false)
 
   const text = ['innovative', 'talented','powerful','creative']
   const msg = ['intelligent', 'skilled', 'dependable','collaborative']
@@ -38,11 +44,53 @@ export const Home = () => {
   const onChange = (key) => {
     console.log(key)
   }
-  const showQnA = () => {
-    if(!showAnswer){
-      setShowAnswer(true)
+  const showQnAOne = () => {
+    if(!showAnswerOne){
+      setShowAnswerOne(true)
     } else {
-      setShowAnswer(false)
+      setShowAnswerOne(false)
+    } 
+  }
+  const showQnATwo = () => {
+    if(!showAnswerTwo){
+      setShowAnswerTwo(true)
+    } else {
+      setShowAnswerTwo(false)
+    } 
+  }
+  const showQnAThree = () => {
+    if(!showAnswerThree){
+      setShowAnswerThree(true)
+    } else {
+      setShowAnswerThree(false)
+    } 
+  }
+  const showQnAFour = () => {
+    if(!showAnswerFour){
+      setShowAnswerFour(true)
+    } else {
+      setShowAnswerFour(false)
+    } 
+  }
+  const showQnAFive = () => {
+    if(!showAnswerFive){
+      setShowAnswerFive(true)
+    } else {
+      setShowAnswerFive(false)
+    } 
+  }
+  const showQnASix = () => {
+    if(!showAnswerSix){
+      setShowAnswerSix(true)
+    } else {
+      setShowAnswerSix(false)
+    } 
+  }
+  const showQnASeven = () => {
+    if(!showAnswerSeven){
+      setShowAnswerSeven(true)
+    } else {
+      setShowAnswerSeven(false)
     } 
   }
   useEffect(() => {
@@ -106,12 +154,12 @@ export const Home = () => {
         <div>
           <div className="flex mb-10">
             <div className="mr-10">
-              <Link onClick={showQnA} className={!showAnswer? 'hidden':''}>
+              <Link onClick={showQnAOne} className={!showAnswerOne? 'hidden':''}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6">
                   <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                 </svg>
               </Link>
-              <Link onClick={showQnA} className={showAnswer? 'hidden':''}>
+              <Link onClick={showQnAOne} className={showAnswerOne? 'hidden':''}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6">
                   <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                 </svg>
@@ -119,7 +167,7 @@ export const Home = () => {
             </div>
             <div className="">
               <h4 className="text-xl font-semibold">What foods are grown by Soumppou Kaffo Farm?</h4>
-              <p className={!showAnswer? `hidden`:''}>
+              <p className={!showAnswerOne? `hidden`:''}>
                 Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. 
                 Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. 
                 Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. 
@@ -129,12 +177,12 @@ export const Home = () => {
           </div>
           <div className="flex mb-10">
             <div className="mr-10">
-              <Link className="hidden">
+              <Link  onClick={showQnATwo} className={!showAnswerTwo? 'hidden':''}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6">
                   <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                 </svg>
               </Link>
-              <Link className="">
+              <Link onClick={showQnATwo} className={showAnswerTwo? 'hidden':''}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6">
                   <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                 </svg>
@@ -153,12 +201,12 @@ export const Home = () => {
           </div>
           <div className="flex mb-10">
             <div className="mr-10">
-              <Link className="hidden ">
+              <Link  onClick={showQnAThree} className={!showAnswerThree? 'hidden':''}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6">
                   <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                 </svg>
               </Link>
-              <Link className="">
+              <Link onClick={showQnAThree} className={showAnswerThree? 'hidden':''}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6">
                   <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                 </svg>
@@ -176,12 +224,12 @@ export const Home = () => {
           </div>
           <div className="flex mb-10">
             <div className="mr-10">
-              <Link className="hidden">
+              <Link  onClick={showQnAFour} className={!showAnswerFour? 'hidden':''}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6">
                   <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                 </svg>
               </Link>
-              <Link className="">
+              <Link onClick={showQnAFour} className={showAnswerFour? 'hidden':''}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6">
                   <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                 </svg>
@@ -200,12 +248,12 @@ export const Home = () => {
           </div>
           <div className="flex mb-10">
             <div className="mr-10">
-              <Link className="hidden">
+              <Link  onClick={showQnAFive} className={!showAnswerFive? 'hidden':''}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6">
                   <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                 </svg>
               </Link>
-              <Link className="">
+              <Link onClick={showQnAFive} className={showAnswerFive? 'hidden':''}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6">
                   <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                 </svg>
@@ -223,12 +271,12 @@ export const Home = () => {
           </div>
           <div className="flex mb-10">
             <div className="mr-10">
-              <Link className="hidden ">
+              <Link  onClick={showQnASix} className={!showAnswerSix? 'hidden':''}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6">
                   <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                 </svg>
               </Link>
-              <Link className="">
+              <Link onClick={showQnASix} className={showAnswerSix? 'hidden':''}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6">
                   <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                 </svg>
@@ -247,12 +295,12 @@ export const Home = () => {
           </div>
           <div className="flex mb-10">
             <div className="mr-10">
-              <Link className="hidden ">
+              <Link  onClick={showQnASeven} className={!showAnswerSeven? 'hidden':''}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6">
                   <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                 </svg>
               </Link>
-              <Link className="">
+              <Link onClick={showQnASeven} className={showAnswerSeven? 'hidden':''}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6">
                   <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                 </svg>
