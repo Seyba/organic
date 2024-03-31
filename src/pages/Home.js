@@ -12,6 +12,7 @@ import { Testimonials } from '../component/Testimonials'
 export const Home = () => {
   const [rightText, setRightText] = useState('')
   const [msgIdx, setMsgIdx] = useState(0)
+  const [showAnswer, setShowAnswer] = useState(false)
 
   const text = ['innovative', 'talented','powerful','creative']
   const msg = ['intelligent', 'skilled', 'dependable','collaborative']
@@ -36,6 +37,13 @@ export const Home = () => {
   ];
   const onChange = (key) => {
     console.log(key)
+  }
+  const showQnA = () => {
+    if(!showAnswer){
+      setShowAnswer(true)
+    } else {
+      setShowAnswer(false)
+    } 
   }
   useEffect(() => {
     const interval = setInterval(() => {
@@ -96,14 +104,14 @@ export const Home = () => {
           </div>
         </div>
         <div>
-          <div className="flex">
+          <div className="flex mb-10">
             <div className="mr-10">
-              <Link className="hidden">
+              <Link onClick={showQnA} className={!showAnswer? 'hidden':''}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6">
                   <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                 </svg>
               </Link>
-              <Link className="">
+              <Link onClick={showQnA} className={showAnswer? 'hidden':''}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6">
                   <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                 </svg>
@@ -111,7 +119,7 @@ export const Home = () => {
             </div>
             <div className="">
               <h4 className="text-xl font-semibold">What foods are grown by Soumppou Kaffo Farm?</h4>
-              <p className="hidden">
+              <p className={!showAnswer? `hidden`:''}>
                 Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. 
                 Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. 
                 Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. 
@@ -119,7 +127,7 @@ export const Home = () => {
               </p>
             </div>
           </div>
-          <div className="flex ">
+          <div className="flex mb-10">
             <div className="mr-10">
               <Link className="hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6">
@@ -143,7 +151,7 @@ export const Home = () => {
             </div>
               
           </div>
-          <div className="flex ">
+          <div className="flex mb-10">
             <div className="mr-10">
               <Link className="hidden ">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6">
@@ -166,7 +174,7 @@ export const Home = () => {
               </p>
             </div>
           </div>
-          <div className="flex ">
+          <div className="flex mb-10">
             <div className="mr-10">
               <Link className="hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6">
@@ -190,7 +198,7 @@ export const Home = () => {
               </div>
               
           </div>
-          <div className="flex ">
+          <div className="flex mb-10">
             <div className="mr-10">
               <Link className="hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6">
@@ -213,7 +221,7 @@ export const Home = () => {
                 </p>
               </div>
           </div>
-          <div className="flex ">
+          <div className="flex mb-10">
             <div className="mr-10">
               <Link className="hidden ">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6">
@@ -237,7 +245,7 @@ export const Home = () => {
               </div>
               
           </div>
-          <div className="flex ">
+          <div className="flex mb-10">
             <div className="mr-10">
               <Link className="hidden ">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6">
@@ -252,7 +260,7 @@ export const Home = () => {
             </div>
             <div>
               <h4 className="text-xl font-semibold">Does Big Dream Farm carry dairy stuff?</h4>
-              <p className="">
+              <p className="hidden">
                 Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. 
                 Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. 
                 Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. 
