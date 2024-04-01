@@ -1,7 +1,6 @@
-import React, {useState, useEffect } from 'react'
+import React, {useState, useEffect, Fragment } from 'react'
 import { Link } from 'react-router-dom'
 import { SoumppouCarousel } from '../component/SoumppouCarousel'
-import { Collapse } from 'antd'
 import { ContactForm } from '../component/ContactForm'
 import { ContactPartial } from '../component/ContactPartial'
 import { Blog } from '../component/Blog'
@@ -23,24 +22,6 @@ export const Home = () => {
   const text = ['innovative', 'talented','powerful','creative']
   const msg = ['intelligent', 'skilled', 'dependable','collaborative']
     
-  const answers = 'Big Dream Farm grows eggplant, okra, carrot, tomatoes and yams'
-  const items = [
-    {
-      key: '1',
-      label: 'This is panel header 1',
-      children: <p>{answers}</p>,
-    },
-    {
-      key: '2',
-      label: 'This is panel header 2',
-      children: <p>{answers}</p>,
-    },
-    {
-      key: '3',
-      label: 'This is panel header 3',
-      children: <p>{answers}</p>,
-    },
-  ];
   const onChange = (key) => {
     console.log(key)
   }
@@ -111,13 +92,6 @@ export const Home = () => {
     return () => clearInterval(interval)
   })
 
-  const contentStyle = {
-    height: '160px',
-    color: '#fff',
-    lineHeight: '160px',
-    textAlign: 'center',
-    background: '#364d79',
-  };
   return (
     <div>
       <SoumppouCarousel/>
@@ -190,7 +164,7 @@ export const Home = () => {
             </div>
             <div>
               <h4 className="text-xl font-semibold">Is there any difference between Big Dream Farm and Soumppou Kaffo Farm?</h4>
-              <p className="hidden">
+              <p className={!showAnswerTwo? `hidden`:''}>
                 Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. 
                 Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. 
                 Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. 
@@ -214,7 +188,7 @@ export const Home = () => {
             </div>
             <div>
               <h4 className="text-xl font-semibold">How long does the delivery take?</h4>
-              <p className="hidden">
+              <p className={!showAnswerThree? `hidden`:''}>
                 Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. 
                 Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. 
                 Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. 
@@ -237,7 +211,7 @@ export const Home = () => {
             </div>
               <div>
                 <h4 className="text-xl font-semibold">How much does the delivery cost?</h4>
-                <p className="hidden">
+                <p className={!showAnswerFour? `hidden`:''}>
                   Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. 
                   Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. 
                   Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. 
@@ -261,7 +235,7 @@ export const Home = () => {
             </div>
               <div>
                 <h4 className="text-xl font-semibold">How early to get lamb delivered on Eid?</h4>
-                <p className="hidden">
+                <p className={!showAnswerFive? `hidden`:''}>
                   Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. 
                   Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. 
                   Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. 
@@ -284,7 +258,7 @@ export const Home = () => {
             </div>
               <div>
                 <h4 className="text-xl font-semibold">How lamb orders are porcessed?</h4>
-                <p className="hidden">
+                <p className={!showAnswerSix? `hidden`:''}>
                   Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. 
                   Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. 
                   Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. 
@@ -307,15 +281,14 @@ export const Home = () => {
               </Link>
             </div>
             <div>
-              <h4 className="text-xl font-semibold">Does Big Dream Farm carry dairy stuff?</h4>
-              <p className="hidden">
+              <h4 className="text-xl font-semibold">Does Big Dream Farm carry dairy stuff?</h4>  
+              <p className={!showAnswerSeven? `hidden`:''}>
                 Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. 
                 Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. 
                 Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. 
                 Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor.
-              </p>
+              </p>    
             </div>
-              
           </div>
         </div>
       </section>
