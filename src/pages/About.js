@@ -8,15 +8,16 @@ import SeyModal from '../component/SeyModal'
 export const About = () => {
   return (
     <>
-      <div className="bg-green-950">
-        <div className="">
+      <div className="">
+        <div className="relative isolate overflow-hidden py-24 md:py-36 sm:py-32 ">
+          <img src="/images/img6.jpg" alt="" className="absolute inset-0 brightness-50 -z-10 h-full w-full object-cover object-right md:object-center"/>
           <div className="py-2">
             <h2 className="text-5xl text-white font-semibold text-center py-2 animate-fade-down animate-once animate-duration-800 animate-ease-in-out">About Us</h2>
           </div>
-          <div className="flex justify-end">
+          <div className="flex justify-center">
             <Meta title={"About"}/>
           </div>
-          <div className="flex justify-end">
+          <div className="flex justify-center">
             <BreadCrumb title="About"/>
           </div>
           
