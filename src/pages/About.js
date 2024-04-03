@@ -20,14 +20,31 @@ export const About = () => {
           <div className="flex justify-center">
             <BreadCrumb title="About"/>
           </div>
-          
         </div>    
       </div>
-      <div>
-        <div>
-          <h2 className="text-center">About Page</h2>
+      <section>
+        <div className="grid md:grid-cols-2 grid-cols-1">
+          <div>
+            <img src="/images/bff.jpg" alt=""/>
+          </div>
+          <div>
+            <div>
+              <h3>History</h3>
+              <p>
+                Big Dream Farm AKA Soumppou Kaffo Farm was founded in 2013 by Kama Doucoure an inspired farmer from Africa.
+                After the foundation Kama brought out the idea of having this opportunity in mostly african american community in New York, then a diverse group of farmers mostly originally from west Africa joined the organization to combine their expertise from homeland. 
+                Inspired by our differences and a shared passion for agriculture especially of widely products consumed in our community.
+                Big Dream Farm consists of inspired farmers from West Africa living in the States, we came together with a vision to provide our community with organic products. 
+                Our early years were about how we can grow products such as okra and African Eggplant in a non-tropical climate, 
+                after our studies in our community in response of high demand in those products we leased a 43 acre land in Saugerties and started clearing it out building barns and greenhouses.
+                We currently operates three greenhouses which produced five tons of okra and eggplant every year.
+                Besides the okra and the eggplant supplies we also provide our local stores with lamb and chicken.  
+                The constant need of lamb supply during Eids and many other cultural events helps us extend even more into farming. 
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
     </>
   )
 }
