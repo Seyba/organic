@@ -39,9 +39,19 @@ export const About = () => {
                 after our studies in our community in response of high demand in those products we leased a 43 acre land in Saugerties and started clearing it out building barns and greenhouses.
                 We currently operates three greenhouses which produced five tons of okra and eggplant every year.
                 Besides the okra and the eggplant supplies we also provide our local stores with lamb and chicken.  
-                The constant need of lamb supply during Eids and many other cultural events helps us extend even more into farming. 
+                The constant need of lamb supply during Eids and many other cultural events helps us expand even more into farming. 
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="green-one">
+        <div className="grid md:grid-cols-2 grid-cols-1">
+          <div>
+            <h4>We Cultivating The Chemical  & Fertilizer Free Products</h4>  
+          </div>
+          <div>
+            <img src="/images/okra.jpeg" alt="okra"/>
           </div>
         </div>
       </section>
