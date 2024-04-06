@@ -181,14 +181,14 @@ export const About = () => {
               After a lot of struggles in our lives, we now are popular and now we are producing the best organic products.
             </p>
 
-            <div className="flex justify-center">
-              <div className="">
+            <div className="py-4 rounded-3xl flex items-center justify-center bg-zinc-200 w-2/5">
+              <div className="mr-4">
                 <svg 
-                  width="20px" 
-                  height="20px" 
+                  width="25px" 
+                  height="25px" 
                   viewBox="0 0 24 24" 
                   xmlns="http://www.w3.org/2000/svg" 
-                  fill="#000000"
+                  fill="#227456"
                 >
                   <g id="SVGRepo_bgCarrier" strokeWidth="0"> 
                   </g>
@@ -201,10 +201,10 @@ export const About = () => {
                 </svg>
               </div>
               <div>
-                <h3>100% Natural Product</h3>
+                <h3 className="text-xl font-semibold">100% Natural Product</h3>
               </div>
             </div>
-            <p>
+            <p className="text-lg leading-8 tracking-wide font-thin">
               In our listing, we have several collections of organic products and
 place where you need to choose the product you want.
             </p>
@@ -231,7 +231,7 @@ place where you need to choose the product you want.
                 <h3>Same Day Delivery</h3>
               </div>
             </div>
-            <p>
+            <p className="text-lg leading-8 tracking-wide font-thin">
             If you are not comfortable going to the nearby market place we
 also will deliver your product to your doorstep.
             </p>
