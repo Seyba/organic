@@ -1,6 +1,7 @@
 import React from 'react'
 import Meta from '../component/Meta'
 import { BreadCrumb } from '../component/BreadCrumb'
+import { Link } from 'react-router-dom'
 import { SmoothScrolling } from '../component/SmoothScrolling'
 import Marquee from 'react-fast-marquee'
 import SeyModal from '../component/SeyModal'
@@ -22,42 +23,45 @@ export const About = () => {
           </div>
         </div>    
       </div>
-      <section>
-        <div className="grid md:grid-cols-2 grid-cols-1">
-          <div>
+      <section className="bg-zinc-100 py-20">
+        <div className="grid xl:grid-cols-2 grid-cols-1">
+          <div className="w-5/6 mx-auto">
             <img src="/images/bff.jpg" alt=""/>
           </div>
           <div>
-            <div>
-              <h3>History</h3>
-              <p>
+            <div className="w-5/6 mx-auto">
+              <h3 className="text-3xl font-bold tracking-wider mb-2 leading-10">History</h3>
+              <p className="text-base text-zinc-600 font-medium leading-6 tracking-wide">
                 Big Dream Farm AKA Soumppou Kaffo Farm was founded in 2013 by Kama Doucoure an inspired farmer from Africa.
                 After the foundation Kama brought out the idea of having this opportunity in mostly african american community in New York, then a diverse group of farmers mostly originally from west Africa joined the organization to combine their expertise from homeland. 
                 Inspired by our differences and a shared passion for agriculture especially of widely products consumed in our community.
-                Big Dream Farm consists of inspired farmers from West Africa living in the States, we came together with a vision to provide our community with organic products. 
+                Big Dream Farm consists of fifty five inspired farmers some from West Africa living in the States, we came together with a vision to provide our community with organic products. 
+              </p>
+              <p className="text-base text-zinc-600 font-medium leading-6 tracking-wide">
                 Our early years were about how we can grow products such as okra and African Eggplant in a non-tropical climate, 
                 after our studies in our community in response of high demand in those products we leased a 43 acre land in Saugerties and started clearing it out building barns and greenhouses.
                 We currently operates three greenhouses which produced five tons of okra and eggplant every year.
                 Besides the okra and the eggplant supplies we also provide our local stores with lamb and chicken.  
                 The constant need of lamb supply during Eids and many other cultural events helps us expand even more into farming. 
+                
               </p>
             </div>
           </div>
         </div>
-      </section>
-      <section className="green-one">
-        <div className="grid md:grid-cols-2 grid-cols-1">
-          <div>
-            <h4>We Cultivating The Chemical  & Fertilizer Free Products</h4>  
-          </div>
-          <div>
-            <img src="/images/okra.jpeg" alt="okra"/>
-          </div>
+        <div className="mt-32 flex justify-center">
+          <button className="flex bg-green-950 hover:bg-slate-50 hover:border hover:border-green-950 py-4 px-10 rounded-2xl text-2xl text-white hover:text-green-950 font-semibold items-center">
+            <Link className="mr-4" to="https://soundcloud.com/user-18109193/12-29-22-cpseg5-thu5">
+              Listen
+            </Link>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+              <path fillRule="evenodd" d="M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z" clipRule="evenodd" />
+            </svg>
+          </button>
         </div>
       </section>
       <section className="bg-zinc-100 py-20 ">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-          <div className="flex justify-center">
+          <div className="flex justify-center mb-12">
             <div className="bg-white flex  rounded-xl w-5/6 py-8">
               <div className="">
                 <div className="h-20 w-20 my-2 bg-zinc-100 flex mx-auto justify-center items-center rounded-xl">
@@ -84,7 +88,7 @@ export const About = () => {
               </div>
             </div>
           </div>
-          <div className="flex justify-center">
+          <div className="flex justify-center mb-12">
             <div className="bg-white flex  rounded-xl w-5/6 py-8">
               <div>
                 <div className="h-20 w-20 my-2 bg-zinc-100 flex mx-auto justify-center items-center rounded-xl">
@@ -112,7 +116,7 @@ export const About = () => {
               </div>
             </div>
           </div>
-          <div className="flex justify-center">
+          <div className="flex justify-center mb-12">
             <div className="bg-white flex  rounded-xl w-5/6 py-8">
               <div>
                 <div className="h-20 w-20 my-2 bg-zinc-100 flex mx-auto justify-center items-center rounded-xl">
@@ -143,7 +147,7 @@ export const About = () => {
               </div>  
             </div>
           </div>
-          <div className="flex justify-center">
+          <div className="flex justify-center mb-12">
             <div className="bg-white flex  rounded-xl w-5/6 py-8">
               <div>
                 <div className="h-20 w-20 my-2 bg-zinc-100 flex mx-auto justify-center items-center rounded-xl">
@@ -169,6 +173,18 @@ export const About = () => {
           </div>
         </div>
       </section>
+      <section className="green-one">
+        <div className="grid md:grid-cols-2 grid-cols-1">
+          <div className="w-3/5 mx-auto ">
+            <img src="/images/planting.jpg" alt="okra"/>
+          </div>
+          <div>
+            <h4 className="text-white">We Cultivating The Chemical  & Fertilizer Free Products</h4>  
+          </div>
+          
+        </div>
+      </section>
+      
     </>
   )
 }
