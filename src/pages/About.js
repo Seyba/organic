@@ -173,15 +173,72 @@ export const About = () => {
           </div>
         </div>
       </section>
-      <section className="green-one">
+      <section className="bg-zinc-100">
         <div className="grid md:grid-cols-2 grid-cols-1">
+          <div className="">
+            <h2 className="text-5xl text-green-950 mb-8 tracking-tight font-bold">We Cultivating The Chemical  & Fertilizer Free Products</h2>  
+            <p className="text-lg leading-8 tracking-wide font-thin">
+              After a lot of struggles in our lives, we now are popular and now we are producing the best organic products.
+            </p>
+
+            <div className="flex justify-center">
+              <div className="">
+                <svg 
+                  width="20px" 
+                  height="20px" 
+                  viewBox="0 0 24 24" 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  fill="#000000"
+                >
+                  <g id="SVGRepo_bgCarrier" strokeWidth="0"> 
+                  </g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier"> 
+                    <path d="M17,8C8,10,5.9,16.17,3.82,21.34L5.71,22l1-2.3A4.49,4.49,0,0,0,8,20C19,20,22,3,22,3,21,5,14,5.25,9,6.25S2,11.5,2,13.5a6.22,6.22,0,0,0,1.75,3.75C7,8,17,8,17,8Z">
+                    </path> 
+                    <rect width="24" height="24" fill="none">
+                    </rect> </g>
+                </svg>
+              </div>
+              <div>
+                <h3>100% Natural Product</h3>
+              </div>
+            </div>
+            <p>
+              In our listing, we have several collections of organic products and
+place where you need to choose the product you want.
+            </p>
+            <div className="flex justify-center">
+              <div className="">
+                <svg 
+                  width="20px" 
+                  height="20px" 
+                  viewBox="0 0 24 24" 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  fill="#000000"
+                >
+                  <g id="SVGRepo_bgCarrier" strokeWidth="0"> 
+                  </g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier"> 
+                    <path d="M17,8C8,10,5.9,16.17,3.82,21.34L5.71,22l1-2.3A4.49,4.49,0,0,0,8,20C19,20,22,3,22,3,21,5,14,5.25,9,6.25S2,11.5,2,13.5a6.22,6.22,0,0,0,1.75,3.75C7,8,17,8,17,8Z">
+                    </path> 
+                    <rect width="24" height="24" fill="none">
+                    </rect> </g>
+                </svg>
+              </div>
+              <div>
+                <h3>Same Day Delivery</h3>
+              </div>
+            </div>
+            <p>
+            If you are not comfortable going to the nearby market place we
+also will deliver your product to your doorstep.
+            </p>
+          </div>
           <div className="w-3/5 mx-auto ">
             <img src="/images/planting.jpg" alt="okra"/>
           </div>
-          <div>
-            <h4 className="text-white">We Cultivating The Chemical  & Fertilizer Free Products</h4>  
-          </div>
-          
         </div>
       </section>
       
