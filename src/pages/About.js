@@ -173,15 +173,15 @@ export const About = () => {
           </div>
         </div>
       </section>
-      <section className="bg-zinc-100">
+      <section className="bg-zinc-100 py-20 px-4 md:px-8">
         <div className="grid md:grid-cols-2 grid-cols-1">
           <div className="">
             <h2 className="text-5xl text-green-950 mb-8 tracking-tight font-bold">We Cultivating The Chemical  & Fertilizer Free Products</h2>  
-            <p className="text-lg leading-8 tracking-wide font-thin">
+            <p className="text-lg leading-8 tracking-wide font-thin mb-4">
               After a lot of struggles in our lives, we now are popular and now we are producing the best organic products.
             </p>
 
-            <div className="py-4 rounded-3xl flex items-center justify-center bg-zinc-200 w-2/5">
+            <div className="py-6 rounded-3xl flex items-center justify-center bg-zinc-200 w-full xl:w-2/5  mb-4">
               <div className="mr-4">
                 <svg 
                   width="25px" 
@@ -204,18 +204,18 @@ export const About = () => {
                 <h3 className="text-xl font-semibold">100% Natural Product</h3>
               </div>
             </div>
-            <p className="text-lg leading-8 tracking-wide font-thin">
+            <p className="text-lg leading-8 tracking-wide font-thin mb-4">
               In our listing, we have several collections of organic products and
 place where you need to choose the product you want.
             </p>
-            <div className="flex justify-center">
-              <div className="">
+            <div className="py-6 rounded-3xl flex items-center justify-center bg-zinc-200 w-full xl:w-2/5 mb-4">
+              <div className="mr-4">
                 <svg 
-                  width="20px" 
-                  height="20px" 
+                  width="25px" 
+                  height="25px" 
                   viewBox="0 0 24 24" 
                   xmlns="http://www.w3.org/2000/svg" 
-                  fill="#000000"
+                  fill="#227456"
                 >
                   <g id="SVGRepo_bgCarrier" strokeWidth="0"> 
                   </g>
@@ -228,7 +228,7 @@ place where you need to choose the product you want.
                 </svg>
               </div>
               <div>
-                <h3>Same Day Delivery</h3>
+                <h3 className="text-xl font-semibold">Same Day Delivery</h3>
               </div>
             </div>
             <p className="text-lg leading-8 tracking-wide font-thin">
@@ -236,7 +236,7 @@ place where you need to choose the product you want.
 also will deliver your product to your doorstep.
             </p>
           </div>
-          <div className="w-3/5 mx-auto ">
+          <div className="w-full xl:w-3/5 mx-auto ">
             <img src="/images/planting.jpg" alt="okra"/>
           </div>
         </div>
