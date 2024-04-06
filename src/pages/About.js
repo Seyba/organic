@@ -241,7 +241,18 @@ also will deliver your product to your doorstep.
           </div>
         </div>
       </section>
-      
+      <section>
+        <div>
+          <div>
+            <h4>The Team</h4>
+            <h2>Our Organic Experts</h2>
+            <p>
+              We have grown on the principles of health, ecology, and care. 
+              We aim to give our customers a healthy chemical-free meal for perfect nutrition.
+            </p>
+          </div>
+        </div>
+      </section>
     </>
   )
 }
