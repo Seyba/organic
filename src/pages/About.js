@@ -253,11 +253,11 @@ also will deliver your product to your doorstep.
           </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3">
-          <div className="w-4/5 mx-auto">
+          <div className="w-4/5 mx-auto mt-12">
             <div>
               <img src="/images/team1.jpg" className="" alt="team"/>
             </div>
-            <div className="flex justify-between bg-zinc-100 py-10 px-6">
+            <div className="flex justify-between rounded-b-2xl bg-zinc-100 hover:bg-white hover:shadow-xl py-10 px-6">
               <div>
                 <h2 className="text-green-900 text-2xl font-bold">Kama Doucoure</h2>
                 <h5 className="text-green-700 font-semibold">Founder</h5>
