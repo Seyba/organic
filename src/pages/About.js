@@ -244,8 +244,8 @@ also will deliver your product to your doorstep.
       <section className="py-20">
         <div>
           <div>
-            <h4>The Team</h4>
-            <h2>Our Organic Experts</h2>
+            <h4 className="text-2xl font-semibold tracking-wider leading-10">The Team</h4>
+            <h2 className="text-green-950 font-bold text-5xl tracking-tight">Our Organic Experts</h2>
             <p>
               We have grown on the principles of health, ecology, and care. 
               We aim to give our customers a healthy chemical-free meal for perfect nutrition.
