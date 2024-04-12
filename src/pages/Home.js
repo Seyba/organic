@@ -294,7 +294,7 @@ export const Home = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section className="mb-16">
         <div className="grid md:grid-cols-2 gap-0">
 
           <div className="bg-green-50 flex p-24 justify-center">

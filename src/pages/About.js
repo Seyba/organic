@@ -259,7 +259,7 @@ also will deliver your product to your doorstep.
             </div>
             <div className="md:flex block justify-between rounded-b-2xl bg-zinc-100 hover:bg-white hover:shadow-xl py-10 px-6">
               <div>
-                <h2 className="text-green-900 text-2xl font-bold">Jane Doe</h2>
+                <h2 className="text-green-900 text-2xl font-bold tracking-tight">Jane Doe</h2>
                 <h5 className="text-green-700 font-semibold">Marketing</h5>
               </div>
               <div className="flex  mt-8">
@@ -287,7 +287,7 @@ also will deliver your product to your doorstep.
             </div>
             <div className="flex justify-between rounded-b-2xl bg-zinc-100 hover:bg-white hover:shadow-xl py-10 px-6">
               <div>
-                <h2 className="text-green-900 text-2xl font-bold">Kama Doucoure</h2>
+                <h2 className="text-green-900 text-2xl font-bold tracking-tight">Kama Doucoure</h2>
                 <h5 className="text-green-700 font-semibold">Founder</h5>
               </div>
               <div className="flex  mt-8">
@@ -315,7 +315,7 @@ also will deliver your product to your doorstep.
             </div>
             <div className="flex justify-between rounded-b-2xl bg-zinc-100 hover:bg-white hover:shadow-xl py-10 px-6">
               <div>
-                <h2 className="text-green-900 text-2xl font-bold">Baba Jagana</h2>
+                <h2 className="text-green-900 text-2xl font-bold tracking-tight">Baba Jagana</h2>
                 <h5 className="text-green-700 font-semibold">Farmer</h5>
               </div>
               <div className="flex  mt-8">
