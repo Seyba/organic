@@ -22,27 +22,27 @@ export const Contact = () => {
           </div>
         </div>    
       </div>
-      <section>
+      <section className="bg-zinc-50">
         <div className="md:flex block ">
           <div className=" md:w-2/5 full">
-            <img src="/images/okra.jpeg" className="w-full" alt=""/>
+            <img src="/images/okra.jpeg" className="px-4 md:px-0 w-full" alt=""/>
           </div>
-          <div className=" md:w-3/5 full">
-            <h2>Let's Find Out. Where Our Organic Farms Located.</h2>
-            <p>
+          <div className="px-4 md:px-12 md:w-3/5 full">
+            <h2 className="text-3xl py-4 font-bold">Let's Find Out. Where Our Organic Farms Located.</h2>
+            <p className="text-lg font-thin leading-8 py-4">
               Please contact us using the information below. 
               To locate, contact us in the nearest organic store or office closest to you, 
               visit our office websites.
             </p>
-            <div className="flex">
-              <div>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+            <div className="flex  rounded-lg border w-2/4 p-4">
+              <div className="bg-zinc-200 w-20 h-20 px-3 py-2 rounded-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-18 h-18">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
                 </svg>
               </div>
-              <div>
-                <h3>Message</h3>
-                <h3>support@bigdreamfarm.com</h3>
+              <div className="pl-6">
+                <h3 className="text-3xl font-bold">Message</h3>
+                <h3 className="text-lg text-zinc-600 tracking-wide">support@bigdreamfarm.com</h3>
               </div>
             </div>
             <div className="flex">
@@ -68,7 +68,7 @@ export const Contact = () => {
                 <h3>49 Washburn Farm Road, Saugerties NY 12477 United States</h3>
               </div>
             </div>
-            <div className="flex  mt-8">
+            <div className="flex">
               <div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#133f2f" className="bi bi-facebook" viewBox="0 0 16 16">
                   <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
@@ -87,7 +87,6 @@ export const Contact = () => {
             </div>
           </div>
         </div>
-        
       </section>
     </>
   )
