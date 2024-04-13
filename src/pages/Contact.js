@@ -56,16 +56,17 @@ export const Contact = () => {
                 <h3 className="text-lg text-zinc-600 tracking-wide">+17189745933</h3>
               </div>
             </div>
-            <div className="flex">
-              <div>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+            <div className="flex  rounded-lg border border-zinc-150 w-2/4 p-4">
+              <div className="bg-zinc-200 w-20 h-20 px-3 py-2 rounded-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-18 h-18">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                   <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
                 </svg>
               </div>
-              <div>
-                <h3>Find Us</h3>
-                <h3>49 Washburn Farm Road, Saugerties NY 12477 United States</h3>
+              <div className="pl-6">
+                <h3 className="text-3xl font-bold">Find Us</h3>
+                <h3 className="text-lg text-zinc-600 tracking-wide">49 Washburn Farm Rd,</h3>
+                <h3 className="text-lg text-zinc-600 tracking-wide">Saugerties NY 12477 U.S</h3>
               </div>
             </div>
             <div className="flex">
