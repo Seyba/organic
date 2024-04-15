@@ -27,14 +27,14 @@ export const Contact = () => {
           <div className=" lg:w-2/5 full">
             <img src="/images/okra.jpeg" className="px-auto w-full" alt=""/>
           </div>
-          <div className="px-4 md:px-12 md:w-3/5 full">
+          <div className="px-4 lg:px-12 lg:w-3/5 full">
             <h2 className="text-3xl py-4 font-bold">Let's Find Out. Where Our Organic Farms Located.</h2>
             <p className="text-lg font-thin leading-8 py-4">
               Please contact us using the information below. 
               To locate, contact us in the nearest organic store or office closest to you, 
               visit our office websites.
             </p>
-            <div className="block lg:flex  my-10 rounded-lg border border-zinc-150 full lg:w-2/4 p-4">
+            <div className="block lg:flex  my-10 rounded-lg border border-zinc-150 full lg:w-3/4 p-4">
               <div className="bg-zinc-200 w-20 h-20 px-3 py-2 rounded-lg">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-18 h-18">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
