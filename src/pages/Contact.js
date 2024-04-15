@@ -98,6 +98,9 @@ export const Contact = () => {
           </div>
         </div>
       </section>
+      <section>
+        <ContactPartial/>
+      </section>
     </>
   )
 }

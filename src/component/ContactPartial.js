@@ -30,8 +30,7 @@ export const ContactPartial = () => {
                       <div className="py-2">
                         <h4 className="text-lg font-bold text-green-800">New York, USA:</h4>
                         <p className="text-lg py-2 font-thin leading-7 tracking-wide">
-                          299 Park Avenue New York,
-                          New York 10171, USA.
+                          381 E 169th St Bronx, NY 10456, USA.
                         </p>
                       </div>
                     </div>
