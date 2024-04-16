@@ -26,7 +26,7 @@ export const Contact = () => {
       <section className="bg-zinc-50 my-20">
         <div className="lg:flex block ">
           <div className="px-4  lg:w-3/5 full">
-            <img src="/images/okra.jpeg" className="px-auto w-full" alt=""/>
+            <img src="/images/okra.jpeg" className="px-auto mx-w-3/5 w-full" alt=""/>
           </div>
           <div className="px-4 lg:px-12 lg:w-3/5 full">
             <div className="mt-0 xl:mt-48">
@@ -100,6 +100,30 @@ export const Contact = () => {
       </section>
       <section>
         <ContactPartial/>
+      </section>
+      <section className="relative">
+        <div className=" grid md:grid-cols-2 grid-cols-1">
+          <div>
+
+          </div>
+          <div>
+            <img src="/images/img6.jpg" alt="pepper"/>
+          </div>
+          
+        </div>
+        <div className="border border-green-700 p-8 border-t-8 w-5/6 md:w-3/6 left-4 md:left-72 top-96 md:top-64 bg-white absolute ">
+          <div className="">
+            <h2>Contact us</h2>
+            <p>
+              Interested in knowing more, 
+              requesting a large product order, 
+              or would just like to say hi? 
+              Fill the form below to get in touch with Big Dream Farm team.
+            </p>
+          </div>
+
+          
+        </div>
       </section>
     </>
   )
