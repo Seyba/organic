@@ -102,17 +102,15 @@ export const Contact = () => {
         <ContactPartial/>
       </section>
       <section className="relative">
-        <div className=" grid md:grid-cols-2 grid-cols-1">
+        <div className="grid md:grid-cols-2 grid-cols-1">
           <div>
-
+            <img src="/images/img6.jpg" className="" alt="pepper"/>
           </div>
           <div>
-            <img src="/images/img6.jpg" alt="pepper"/>
           </div>
-          
         </div>
-        <div className="border border-green-700 p-8 border-t-8 w-5/6 md:w-3/6 left-4 md:left-72 top-96 md:top-64 bg-white absolute ">
-          <div className="">
+        <div className="border border-green-700 p-8 border-t-8 w-81 bottom-44 bg-white absolute ">
+          <form className="">
             <h2>Contact us</h2>
             <p>
               Interested in knowing more, 
@@ -120,7 +118,36 @@ export const Contact = () => {
               or would just like to say hi? 
               Fill the form below to get in touch with Big Dream Farm team.
             </p>
-          </div>
+            <div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                <div>
+                  <label>Full Name</label>
+                  <input 
+                    type="text"
+                    name="fullname"
+                    autoComplete="fullname"
+                    className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
+                    placeholder="janesmith"
+                  />
+                  
+                </div>
+                <div>
+                  <label>Email Address</label>
+                </div>
+                <div>
+                  <label>Phone Number</label>
+                </div>
+                <div>
+                  <label>Subject</label>
+                </div>
+              </div>
+              <div>
+                <label>Message</label>
+
+              </div>
+            </div>
+          </form>
+
 
           
         </div>
