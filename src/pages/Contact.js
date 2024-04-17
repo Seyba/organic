@@ -102,55 +102,52 @@ export const Contact = () => {
         <ContactPartial/>
       </section>
       <section className="relative">
-        <div className="grid md:grid-cols-2 grid-cols-1">
-          <div>
-            <img src="/images/img6.jpg" className="" alt="pepper"/>
-          </div>
-          <div>
-          </div>
-        </div>
-        <div className="border border-green-700 p-8 border-t-8 w-81 bottom-44 bg-white absolute ">
-          <form className="">
-            <h2>Contact us</h2>
-            <p>
-              Interested in knowing more, 
-              requesting a large product order, 
-              or would just like to say hi? 
-              Fill the form below to get in touch with Big Dream Farm team.
-            </p>
-            <div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                <div>
-                  <label>Full Name</label>
-                  <input 
-                    type="text"
-                    name="fullname"
-                    autoComplete="fullname"
-                    className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
-                    placeholder="janesmith"
-                  />
-                  
-                </div>
-                <div>
-                  <label>Email Address</label>
-                </div>
-                <div>
-                  <label>Phone Number</label>
-                </div>
-                <div>
-                  <label>Subject</label>
-                </div>
-              </div>
+        <div className="relative flex justify-center isolate overflow-hidden py-64 ">
+          <img src="/images/pepperWhite.png" className="absolute inset-0 brightness-50 -z-10 h-full w-full object-cover object-center " alt="pepper"/>
+          <div className="border border-green-700 p-8 border-t-8 w-5/6 md:w-4/6  bg-white bottom-24 absolute ">
+            <form className="">
+              <h2>Contact us</h2>
+              <p>
+                Interested in knowing more, 
+                requesting a large product order, 
+                or would just like to say hi? 
+                Fill the form below to get in touch with Big Dream Farm team.
+              </p>
               <div>
-                <label>Message</label>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                  <div>
+                    <label className="text-lg font-semibold">Full Name</label>
+                    <input 
+                      type="text"
+                      name="fullname"
+                      autoComplete="fullname"
+                      className="block flex-1 rounded-2xl border-0 bg-zinc-50 py-3 pl-3 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
+                      placeholder="John Doe"
+                    />
+                    
+                  </div>
+                  <div className="text-lg font-semibold">
+                    <label>Email Address</label>
+                  </div>
+                  <div className="text-lg font-semibold">
+                    <label>Phone Number</label>
+                  </div>
+                  <div className="text-lg font-semibold">
+                    <label>Subject</label>
+                  </div>
+                </div>
+                <div>
+                  <label className="text-lg font-semibold">Message</label>
 
+                </div>
               </div>
-            </div>
-          </form>
+            </form>
 
 
-          
+            
+          </div>
         </div>
+        
       </section>
     </>
   )
