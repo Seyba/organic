@@ -168,13 +168,13 @@ export const Contact = () => {
                     <div className="my-2">
                       <textarea
                         name="message"
-                        rows={3}
+                        rows={4}
                         className="block w-full bg-zinc-100 rounded-md border-0 py-1.5 pl-2 text-gray-900 shadow-sm  placeholder:text-gray-400 focus:ring-1 focus:ring-green-400 sm:text-sm sm:leading-6"
                         defaultValue={''}
                         placeholder="Hello, I'd like to get in touch with Big Dream Farm about..."
                       />
                     </div>
-                    <button className="bg-green-900 text-white py-3 px-4 rounded-md mt-8">Send Message</button>
+                    <button className="text-base font-semibold hover:bg-green-800 bg-green-900 text-white md:w-1/4 w-full py-4 rounded-md mt-8">Send Message</button>
                   </div>
                 </div>
             </form>
