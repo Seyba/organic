@@ -102,7 +102,7 @@ export const Contact = () => {
         <ContactPartial/>
       </section>
       <section className="relative">
-        <div className="relative flex justify-center isolate overflow-hidden py-64 ">
+        <div className="relative flex justify-center isolate overflow-hidden py-80 ">
           <img src="/images/pepperWhite.png" className="absolute inset-0 brightness-50 -z-10 h-full w-full object-cover object-center " alt="pepper"/>
           <div className="border border-green-700 p-8 border-t-8 w-5/6 md:w-4/6  bg-white bottom-24 absolute ">
             <form className="">
@@ -117,56 +117,65 @@ export const Contact = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                   <div>
                     <label className="text-lg font-semibold">Full Name</label>
-                    <input 
-                      type="text"
-                      name="fullname"
-                      autoComplete="fullname"
-                      className="block w-full flex-1 rounded-md border-0 bg-zinc-50 py-3 pl-3 text-gray-900 placeholder:text-gray-400 focus:ring-1 focus:ring-green-200 sm:text-sm sm:leading-6"
-                      placeholder="John Doe"
-                    />
-                    
+                    <div className="my-2">
+                      <input 
+                        type="text"
+                        name="fullname"
+                        autoComplete="fullname"
+                        className="block w-full flex-1 rounded-md border-0 bg-zinc-50 py-3 pl-3 text-gray-900 placeholder:text-gray-400 focus:ring-1 focus:ring-green-200 sm:text-sm sm:leading-6"
+                        placeholder="John Doe"
+                      />
+                    </div>
                   </div>
                   <div className="text-lg font-semibold">
                     <label>Email Address</label>
-                    <input 
-                      type="email"
-                      name="email"
-                      autoComplete="email"
-                      className="block w-full flex-1 rounded-md border-0 bg-zinc-50 py-3 pl-3 text-gray-900 placeholder:font-thin placeholder:text-gray-400 focus:ring-1 focus:ring-green-200 sm:text-sm sm:leading-6"
-                      placeholder="JohnDoe@gmail.com"
-                    />
+                    <div className="my-2">
+                      <input 
+                        type="email"
+                        name="email"
+                        autoComplete="email"
+                        className="block w-full flex-1 rounded-md border-0 bg-zinc-50 py-3 pl-3 text-gray-900 placeholder:font-thin placeholder:text-gray-400 focus:ring-1 focus:ring-green-200 sm:text-sm sm:leading-6"
+                        placeholder="JohnDoe@gmail.com"
+                      />
+                    </div>
                   </div>
                   <div className="text-lg font-semibold">
                     <label>Phone Number</label>
-                    <input 
-                      type="number"
-                      name="number"
-                      autoComplete="number"
-                      className="block w-full flex-1 rounded-md border-0 bg-zinc-50 py-3 pl-3 text-gray-900 placeholder:text-gray-400 focus:ring-1 focus:ring-green-200 sm:text-sm sm:leading-6"
-                      placeholder="(485)-186-0457"
-                    />
+                    <div className="my-2">
+                      <input 
+                        type="number"
+                        name="number"
+                        autoComplete="number"
+                        className="block w-full flex-1 rounded-md border-0 bg-zinc-50 py-3 pl-3 text-gray-900 placeholder:text-gray-400 placeholder:font-thin focus:ring-1 focus:ring-green-200 sm:text-sm sm:leading-6"
+                        placeholder="(485)-186-0457"
+                      />
+                    </div>  
                   </div>
                   <div className="text-lg font-semibold">
                     <label>Subject</label>
-                    <input 
-                      type="text"
-                      name="subject"
-                      autoComplete="subject"
-                      className="block w-full flex-1 rounded-md border-0 bg-zinc-100 py-3 pl-3 text-gray-900 placeholder:text-gray-400 focus:ring-1 focus:ring-green-200 sm:text-sm sm:leading-6"
-                      placeholder="General Questions"
-                    />
+                    <div className="my-2">
+                      <input 
+                        type="text"
+                        name="subject"
+                        autoComplete="subject"
+                        className="block w-full flex-1 rounded-md border-0 bg-zinc-100 py-3 pl-3 text-gray-900 placeholder:text-gray-400 placeholder:font-thin focus:ring-1 focus:ring-green-200 sm:text-sm sm:leading-6"
+                        placeholder="General Questions"
+                      />
+                    </div>
                   </div>
                 </div>
                 <div>
                   <label className="text-lg font-semibold">Message</label>
-                  <textarea
-                    name="message"
-                    rows={3}
-                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                    defaultValue={''}
-                    placeholder="Hello, I'd like to get in touch with Big Dream Farm about..."
-                  />
-                  <button>Send Message</button>
+                  <div className="my-2">
+                    <textarea
+                      name="message"
+                      rows={3}
+                      className="block w-full bg-zinc-100 rounded-md border-0 py-1.5 pl-2 text-gray-900 shadow-sm  placeholder:text-gray-400 focus:ring-1 focus:ring-green-400 sm:text-sm sm:leading-6"
+                      defaultValue={''}
+                      placeholder="Hello, I'd like to get in touch with Big Dream Farm about..."
+                    />
+                  </div>
+                  <button className="bg-green-900 text-white py-3 px-4 rounded-md mt-8">Send Message</button>
                 </div>
               </div>
             </form>
