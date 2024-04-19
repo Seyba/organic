@@ -122,7 +122,7 @@ export const Contact = () => {
                         type="text"
                         name="fullname"
                         autoComplete="fullname"
-                        className="block w-full flex-1 rounded-md border-0 bg-zinc-50 py-3 pl-3 text-gray-900 placeholder:text-gray-400 focus:ring-1 focus:ring-green-200 sm:text-sm sm:leading-6"
+                        className="block w-full flex-1 rounded-md border-0 bg-zinc-100 py-3 pl-3 text-gray-900 placeholder:text-gray-400 focus:ring-1 focus:ring-green-200 sm:text-sm sm:leading-6"
                         placeholder="John Doe"
                       />
                     </div>
@@ -134,7 +134,7 @@ export const Contact = () => {
                         type="email"
                         name="email"
                         autoComplete="email"
-                        className="block w-full flex-1 rounded-md border-0 bg-zinc-50 py-3 pl-3 text-gray-900 placeholder:font-thin placeholder:text-gray-400 focus:ring-1 focus:ring-green-200 sm:text-sm sm:leading-6"
+                        className="block w-full flex-1 rounded-md border-0 bg-zinc-100 py-3 pl-3 text-gray-900 placeholder:font-thin placeholder:text-gray-400 focus:ring-1 focus:ring-green-200 sm:text-sm sm:leading-6"
                         placeholder="JohnDoe@gmail.com"
                       />
                     </div>
@@ -146,7 +146,7 @@ export const Contact = () => {
                         type="number"
                         name="number"
                         autoComplete="number"
-                        className="block w-full flex-1 rounded-md border-0 bg-zinc-50 py-3 pl-3 text-gray-900 placeholder:text-gray-400 placeholder:font-thin focus:ring-1 focus:ring-green-200 sm:text-sm sm:leading-6"
+                        className="block w-full flex-1 rounded-md border-0 bg-zinc-100 py-3 pl-3 text-gray-900 placeholder:text-gray-400 placeholder:font-thin focus:ring-1 focus:ring-green-200 sm:text-sm sm:leading-6"
                         placeholder="(485)-186-0457"
                       />
                     </div>  
