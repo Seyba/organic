@@ -187,9 +187,9 @@ export const Contact = () => {
       </section> */}
       <section>
         <div className="form-wrapper flex justify-center">
-          <div className="border border-green-700 p-8 border-t-8 w-5/6 md:w-4/6  bg-white">
+          <div className="border border-green-700 p-8 shadow-2xl border-t-8 w-5/6 md:w-4/6  bg-white">
             <form className="">
-                <h2 className="text-5xl mb-4 font-bold leading-10">Contact us</h2>
+                <h2 className="md:text-5xl text-4xl mb-4 font-bold leading-10">Contact us</h2>
                 <p className="text-base font-thin text-zinc-600 mb-4">
                   Interested in knowing more, 
                   requesting a large product order, 
