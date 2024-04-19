@@ -53,6 +53,14 @@ body {
     color: #ffffff;
   } 
 }
+.form-wrapper {
+  background-image: url('../public/images/pepperWhite.png');
+  background-repeat: no-repeat;
+  /* background-position-x: -300px;
+  background-position-y: -80px; */
+  /* background-size: 0px 0px; */
+  padding: 100px 0;
+}
 /*? ================================== CAROUSEL SLICK DOTS =======================*/
 .ant-carousel ul.slick-dots.slick-dots-bottom li {
   display: none;
