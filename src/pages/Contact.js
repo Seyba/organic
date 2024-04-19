@@ -107,7 +107,7 @@ export const Contact = () => {
           <div className="border border-green-700 p-8 border-t-8 w-5/6 md:w-4/6  bg-white bottom-24 absolute ">
             <form className="">
               <h2 className="text-5xl mb-4 font-bold leading-10">Contact us</h2>
-              <p>
+              <p className="text-base font-thin text-zinc-600 mb-4">
                 Interested in knowing more, 
                 requesting a large product order, 
                 or would just like to say hi? 
