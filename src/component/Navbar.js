@@ -89,7 +89,7 @@ export const Navbar = () => {
                                 <div className="space-y-6 border-t border-gray-200 px-4 py-6">
                                     <div className="flow-root">
                                         <Link 
-                                            to="/" 
+                                            to="/login" 
                                             className="-m-2 block p-2 text-lg font-medium text-green-900 hover:text-green-950"
                                             onClick={() => setOpen(false)}
                                         >
