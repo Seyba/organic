@@ -4,10 +4,14 @@ import { Link } from 'react-router-dom'
 export const Login = () => {
   return (
     <div>
-        <section className="relative isolate overflow-hidden bg-gray-900 px-4 md:px-0 py-24 sm:py-32">
-            
+        <section className="relative isolate overflow-hidden bg-zinc-900 px-4 md:px-0 py-24 sm:py-32">
+            <img
+                src="/images/brussel-sprouts.jpg"
+                alt=""
+                className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
+            />
             <div className="flex">
-                <form className="py-10 px-4 mx-auto full lg:w-2/6 bg-white border border-zinc-300">
+                <form className="py-10 px-4 mx-auto w-96 bg-white border border-zinc-300">
                     <div className="flex mb-4">
                         <h2 className="md:text-3xl text-2xl mb-4 font-light leading-10">Log In </h2>
                         <div className="ml-4">
@@ -17,7 +21,7 @@ export const Login = () => {
                             </svg>
                         </div>
                     </div>
-                    <label>Email</label>
+                    <label className="text-xl font-extralight tracking-wide">Email</label>
                     <div className="my-3">
                         <input 
                         type="email"
@@ -27,7 +31,7 @@ export const Login = () => {
                         placeholder="JohnDoe@gmail.com"
                         />
                     </div>
-                    <label>Password</label>
+                    <label className="text-xl font-extralight tracking-wide">Password</label>
                     <div className="my-3">
                         <input 
                         type="password"
@@ -40,16 +44,16 @@ export const Login = () => {
                     <div className='my-4'>
                         <button className="green-one hover:bg-green-900 text-white w-full py-2 text-lg font-semibold">Log In </button>
                     </div>
-                    <div className="flex justify-around my-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 my-4">
                         <div>
-                            <Link className="divide-x-2 divide-gray-500">Forgot My Username</Link>
+                            <Link className="tracking-tight border-r border-gray-900 md:pr-8 pr-2 py-2">Forgot My Username</Link>
                         </div>
                         <div>
-                            <Link className="divide-x-2 divide-gray-500">Forgot My Password</Link>
+                            <Link className="md:pl-8 pl-2 tracking-tight">Forgot My Password</Link>
                         </div>
                     </div>
-                    <div className="my-3 text-center">
-                        <Link>Create An Account</Link>
+                    <div className="my-4 text-center">
+                        <Link className="text-base font-extralight">Create An Account</Link>
                     </div>
                     
                 </form>
