@@ -13,6 +13,8 @@ import { PortfolioContext } from './context/portfolioContext'
 import { projectData } from './utils/data';
 import { Login } from './pages/Login';
 import { Signup } from './pages/Signup';
+import { Products } from './pages/Products';
+import { Product } from './pages/Product';
 
 function App() {
   return (
@@ -29,6 +31,8 @@ function App() {
             <Route path="/signup" element={<Signup/>}/>
             <Route path="/projects" element={<Projects/>}/>
             <Route path="/projects/project/:id" element={<Project/>}/>
+            <Route path="/products" element={<Products/>}/>
+            <Route path="/products/project/:id" element={<Product/>}/>
             <Route path="*" element={<NotFoundPage/>}/>
           </Routes>
           <Footer/>
