@@ -4,10 +4,11 @@ import { Link } from 'react-router-dom'
 export const Login = () => {
   return (
     <div>
-        <section className="py-32 green-one">
+        <section className="relative isolate overflow-hidden bg-gray-900 px-4 md:px-0 py-24 sm:py-32">
+            
             <div className="flex">
-                <form className="p-8 mx-auto full md:w-2/6 bg-white border border-zinc-300">
-                    <div className="flex">
+                <form className="py-10 px-4 mx-auto full lg:w-2/6 bg-white border border-zinc-300">
+                    <div className="flex mb-4">
                         <h2 className="md:text-3xl text-2xl mb-4 font-light leading-10">Log In </h2>
                         <div className="ml-4">
                             <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#227456" className="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
@@ -15,10 +16,9 @@ export const Login = () => {
                                 <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
                             </svg>
                         </div>
-                        
                     </div>
                     <label>Email</label>
-                    <div className="my-2">
+                    <div className="my-3">
                         <input 
                         type="email"
                         name="email"
@@ -28,7 +28,7 @@ export const Login = () => {
                         />
                     </div>
                     <label>Password</label>
-                    <div className="my-2">
+                    <div className="my-3">
                         <input 
                         type="password"
                         name="password"
@@ -37,12 +37,21 @@ export const Login = () => {
                         placeholder="Enter password"
                         />
                     </div>
-                    <button className="green-one text-white w-full py-2 text-lg font-semibold">Log In </button>
-                    <div>
-                        <Link className="divide-x-2 divide-gray-500">Forgot My Username</Link>
-                        <Link className="divide-x-2 divide-gray-500">Forgot My Password</Link>
+                    <div className='my-4'>
+                        <button className="green-one hover:bg-green-900 text-white w-full py-2 text-lg font-semibold">Log In </button>
                     </div>
-                    <Link>Create An Account</Link>
+                    <div className="flex justify-around my-4">
+                        <div>
+                            <Link className="divide-x-2 divide-gray-500">Forgot My Username</Link>
+                        </div>
+                        <div>
+                            <Link className="divide-x-2 divide-gray-500">Forgot My Password</Link>
+                        </div>
+                    </div>
+                    <div className="my-3 text-center">
+                        <Link>Create An Account</Link>
+                    </div>
+                    
                 </form>
             </div>
         </section>
