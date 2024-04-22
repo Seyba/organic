@@ -79,7 +79,7 @@ export const Navbar = () => {
                                         <Link 
                                             className="text-lg font-medium text-green-900 hover:text-green-950" 
                                             onClick={() => setOpen(false)} 
-                                            to="/shop"
+                                            to="/products"
                                         >
                                             Shop
                                         </Link>
@@ -140,7 +140,7 @@ export const Navbar = () => {
                                     <Link to="/about" className="text-lg font-semibold text-green-800 hover:text-green-950">
                                         About Us
                                     </Link>
-                                    <Link to="/shop" className="text-lg font-semibold text-green-800 hover:text-green-950">
+                                    <Link to="/products" className="text-lg font-semibold text-green-800 hover:text-green-950">
                                         Shop
                                     </Link>
                                     <Link to="/contact" className="text-lg font-semibold text-green-800 hover:text-green-950">
