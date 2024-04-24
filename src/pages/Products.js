@@ -22,7 +22,7 @@ export const Products = () => {
         <section className="bg-zinc-100 py-12">
             <div className="w-5/6 mx-auto">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                    <div className="bg-white relative p-4 flex justify-center">
+                    <div className="bg-white p-4 flex justify-center">
                         <div>
                             <div className="flex justify-between">
                                 <div className="">
@@ -34,7 +34,7 @@ export const Products = () => {
                                         </Link>
                                     </div>    
                                 </div>
-                                <div className="relative ">
+                                <div className="">
                                     <div className="">
                                         <Link to="/">
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#000000" className="w-6 h-6">
@@ -48,8 +48,8 @@ export const Products = () => {
                                 <img src="/images/chicken.png" className="" alt="" />
                             </div>
                             <h4 className="text-2xl font-semibold text-center mb-4">Whole Chicken</h4>
-                            <div className="mt-4 text-xl font-bold mx-auto rounded-full text-center w-1/4">
-                                <h3 >$15</h3>
+                            <div className="mt-4 text-lg text-zinc-600 font-bold text-center">
+                                <h3>$ 15.00 USD</h3>
                             </div>
                         </div>
                     </div>
@@ -75,8 +75,8 @@ export const Products = () => {
                                 <img src="/images/freshOkra.png" className="" alt="" />
                             </div>
                             <h4 className="text-2xl font-semibold text-center mb-4">Fresh Okra</h4>
-                            <div className="mt-4 text-xl font-bold mx-auto  text-center w-1/4">
-                                <h3 >$8</h3>
+                            <div className="mt-4 text-lg text-zinc-600 font-bold text-center">
+                                <h3 >$ 8.00 USD</h3>
                             </div>
                         </div>
                     </div>
@@ -102,8 +102,8 @@ export const Products = () => {
                                 <img src="/images/lambChops.png" className="" alt="" />
                             </div>
                             <h4 className="text-2xl font-semibold text-center mb-4">Lamb Chops</h4>
-                            <div className="mt-4 text-xl font-bold mx-auto text-center w-1/4">
-                                <h3 >$20</h3>
+                            <div className="mt-4 text-lg text-zinc-600 font-bold  text-center">
+                                <h3 >$ 20.00 USD</h3>
                             </div>
                         </div>
                     </div>
@@ -129,8 +129,8 @@ export const Products = () => {
                                 <img src="/images/bitterTomato.png" className="" alt="" />
                             </div>
                             <h4 className="text-2xl font-semibold text-center mb-4">African Eggplant</h4>
-                            <div className="mt-4 text-xl font-bold mx-auto py-1 text-center w-1/4">
-                                <h3 >$5</h3>
+                            <div className="mt-4 text-lg text-zinc-600 font-bold mx-auto py-1 text-center">
+                                <h3 >$ 5.00 USD</h3>
                             </div>
                         </div>
                     </div>
