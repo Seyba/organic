@@ -22,10 +22,10 @@ export const Products = () => {
         <section className="bg-zinc-100 py-12">
             <div className="w-5/6 mx-auto">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                    <div className="bg-white p-4 flex justify-center">
+                    <div className="bg-white relative p-4 flex justify-center">
                         <div>
                             <div className="flex justify-between">
-                                <div className="relative  ">
+                                <div className="">
                                     <div className="">
                                         <Link to="/">
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#000000" className="w-7 h-7">
@@ -41,8 +41,7 @@ export const Products = () => {
                                                 <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
                                             </svg>
                                         </Link>
-                                    </div>
-                                    
+                                    </div>                                    
                                 </div>
                             </div>
                             <div className="w-2/6 my-16  mx-auto">

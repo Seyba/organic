@@ -255,12 +255,12 @@ also will deliver your product to your doorstep.
         <div className="grid grid-cols-1 lg:grid-cols-3">
           <div className="w-4/5 mx-auto mt-12">
             <div>
-              <img src="/images/team2.jpg" className="w-full" alt="team"/>
+              <img src="/images/mahamadou.jpg" className="w-full" alt="team"/>
             </div>
             <div className="md:flex block justify-between rounded-b-2xl bg-zinc-100 hover:bg-white hover:shadow-xl py-10 px-6">
               <div>
-                <h2 className="text-green-900 text-2xl font-bold tracking-tight">Jane Doe</h2>
-                <h5 className="text-green-700 font-semibold">Marketing</h5>
+                <h2 className="text-green-900 text-2xl font-bold tracking-tight">Mahamadou Tirera</h2>
+                <h5 className="text-green-700 font-semibold">Farmer</h5>
               </div>
               <div className="flex  mt-8">
                 <div>
@@ -283,7 +283,7 @@ also will deliver your product to your doorstep.
           </div>
           <div className="w-4/5 mx-auto mt-12">
             <div>
-              <img src="/images/team1.jpg" className="w-full" alt="team"/>
+              <img src="/images/kamaDoucoure.jpg" className="w-full" alt="team"/>
             </div>
             <div className="flex justify-between rounded-b-2xl bg-zinc-100 hover:bg-white hover:shadow-xl py-10 px-6">
               <div>
@@ -311,12 +311,12 @@ also will deliver your product to your doorstep.
           </div>
           <div className="w-4/5 mx-auto mt-12">
             <div>
-              <img src="/images/team1.jpg" className="w-full" alt="team"/>
+              <img src="/images/kamaDoucoure.jpg" className="w-full" alt="team"/>
             </div>
             <div className="flex justify-between rounded-b-2xl bg-zinc-100 hover:bg-white hover:shadow-xl py-10 px-6">
               <div>
-                <h2 className="text-green-900 text-2xl font-bold tracking-tight">Baba Jagana</h2>
-                <h5 className="text-green-700 font-semibold">Farmer</h5>
+                <h2 className="text-green-900 text-2xl font-bold tracking-tight">Kama Doucoure</h2>
+                <h5 className="text-green-700 font-semibold">Founder</h5>
               </div>
               <div className="flex  mt-8">
                 <div>
