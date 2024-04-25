@@ -32,7 +32,7 @@ function App() {
             <Route path="/projects" element={<Projects/>}/>
             <Route path="/projects/project/:id" element={<Project/>}/>
             <Route path="/products" element={<Products/>}/>
-            <Route path="/products/project/:id" element={<Product/>}/>
+            <Route path="/products/product/:id" element={<Product/>}/>
             <Route path="*" element={<NotFoundPage/>}/>
           </Routes>
           <Footer/>

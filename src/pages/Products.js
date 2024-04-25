@@ -45,7 +45,10 @@ export const Products = () => {
                                 </div>
                             </div>
                             <div className="w-2/6 my-16  mx-auto">
-                                <img src="/images/chicken.png" className="" alt="" />
+                                <Link to="/products/product/idosdis">
+                                    <img src="/images/chicken.png" className="" alt="" />
+                                </Link>
+                                
                             </div>
                             <h4 className="text-2xl font-semibold text-center mb-4">Whole Chicken</h4>
                             <div className="mt-4 text-lg text-zinc-600 font-bold text-center">
