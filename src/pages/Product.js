@@ -22,18 +22,24 @@ export const Product = () => {
                     Sweet corn is the result of a naturally occurring recessive mutation in the genes which control the conversion of sugar to starch.
                 </p>
                 <form>
-                    <div>
-                        <label>Quantity</label>
-                        <input 
-                            type="number"
-                            name="quantity"
-                            className="block w-1/4 flex-1 rounded-md border-0 bg-zinc-100 py-4 pl-3 text-gray-900 placeholder:text-gray-400 placeholder:font-thin focus:ring-1 focus:ring-green-200 sm:text-sm sm:leading-6"
-                        />
-                        <button className="bg-green-950 w-1/4 text-white">
-                            <Link to="/">
-                                Add To Cart
-                            </Link>
-                        </button>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
+                        <div className="w-full">
+                            Quantity:
+                            <input 
+                                type="number"
+                                name="quantity"
+                                className="block w-1/4 flex-1 rounded-md border-0 bg-zinc-100 py-4 pl-3 text-gray-900 placeholder:text-gray-400 placeholder:font-thin focus:ring-1 focus:ring-green-200 sm:text-sm sm:leading-6"
+                            />
+                        </div>
+                        <div>
+                            <button className="bg-green-950 w-1/4 text-white">
+                                <Link to="/">
+                                    Add To Cart
+                                </Link>
+                            </button>
+                        </div>
+                        
+                        
                     </div>
                     
                 </form>
