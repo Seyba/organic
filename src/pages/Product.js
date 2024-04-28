@@ -47,18 +47,18 @@ export const Product = () => {
                             
                             
                         </div> */}
-                        <div className="flex items-center flex-wrap">
+                        <div className="flex items-center flex-wrap py-8">
                             <div>
                                 <label className="text-2xl text-green-950 font-semibold">Quantity :</label>
                             </div>
-                            <div className="">
+                            <div className="my-2">
                                 <input 
                                     type="number"
                                     name="quantity"
                                     className="w-2/4 rounded-md border-0 bg-zinc-100 py-4 p-4 text-gray-900 placeholder:text-gray-400 placeholder:font-thin  focus:ring-1 focus:ring-green-200 text-xl"
                                 />
                             </div>
-                            <div className="bg-green-950 px-10 py-4 rounded-md text-xl text-white">
+                            <div className="bg-green-950 hover:bg-green-900 px-10 py-4 rounded-md text-xl text-white">
                                 <button >
                                     <Link to="/">
                                         Add To Cart
