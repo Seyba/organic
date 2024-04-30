@@ -7,6 +7,11 @@ export const Navbar = () => {
     const [cartOpen, setCartOpen] = useState(false)
     const cancelButtonRef = useRef(null)
 
+    const cartOpenOffCanvasClosed = () => {
+        setCartOpen(true)
+        setOpen(false)
+    }
+
     return(
         <div className="bg-white">
             <Transition.Root show={open} as={Fragment}>
@@ -106,6 +111,17 @@ export const Navbar = () => {
                                             onClick={() => setOpen(false)}
                                         >
                                             Create account
+                                        </Link>
+                                    </div>
+                                    <div className="flow-root">
+                                        <Link 
+                                            to="" 
+                                            className="-m-2 block p-2 text-lg font-medium text-green-900 hover:text-green-950"
+                                            onClick={
+                                                () => cartOpenOffCanvasClosed()
+                                            }
+                                        >
+                                            Cart
                                         </Link>
                                     </div>
                                 </div>
