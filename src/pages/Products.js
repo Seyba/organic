@@ -194,13 +194,13 @@ export const Products = () => {
                             </div>
                             <div className="w-2/6 my-16  mx-auto">
                                 <Link to="/products/product/idosdis">
-                                    <img src="/images/freshOkra.png" className="" alt="" />
+                                    <img src="/images/yellowpepper.png" className="" alt="" />
                                 </Link>
                                 
                             </div>
-                            <h4 className="text-2xl font-semibold text-center mb-4">Fresh Okra</h4>
+                            <h4 className="text-2xl font-semibold text-center mb-4">Yellow Pepper</h4>
                             <div className="mt-4 text-lg text-zinc-600 font-bold text-center">
-                                <h3 >$ 8.00 USD</h3>
+                                <h3 >$ 10.00 USD</h3>
                             </div>
                         </div>
                     </div>
