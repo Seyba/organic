@@ -15,6 +15,7 @@ import { Login } from './pages/Login';
 import { Signup } from './pages/Signup';
 import { Products } from './pages/Products';
 import { Product } from './pages/Product';
+import { Cart } from './pages/Cart';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <PortfolioContext.Provider value={{projectData}}>
         <BrowserRouter>
           <Navbar/>
+          <Cart/>
           <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/about" element={<About />} />
