@@ -13,7 +13,7 @@ export const Product = () => {
   return (
     <div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
-            <div className="">
+            <div className="p-4 rounded-lg">
                 <img src="/images/freshCorn.jpg" alt=""/>
             </div>
             <div className="px-4 flex items-center">
@@ -32,30 +32,7 @@ export const Product = () => {
                         Sweet corn is the result of a naturally occurring recessive mutation in the genes which control the conversion of sugar to starch.
                     </p>
                     <form>
-                        {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
-                            <div className="w-full flex items-center">
-                                <div>
-                                    <label className="text-2xl text-green-950 font-semibold">Quantity:</label>
-                                </div>
-                                <div className="ml-4">
-                                    <input 
-                                        type="text"
-                                        name="quantity"
-                                        className="block w-2/4 rounded-md border-0 bg-zinc-100 py-4 p-4 text-gray-900 placeholder:text-gray-400 placeholder:font-thin  focus:ring-1 focus:ring-green-200 text-xl"
-                                    />
-                                </div>
-                                
-                            </div>
-                            <div>
-                                <button className="bg-green-950 w-1/4 text-white">
-                                    <Link to="/">
-                                        Add To Cart
-                                    </Link>
-                                </button>
-                            </div>
-                            
-                            
-                        </div> */}
+                        
                         <div className="flex items-center flex-wrap py-8">
                             <div className="mr-10">
                                 <label className="text-2xl text-green-950 font-semibold">Quantity :</label>
