@@ -25,9 +25,9 @@ export const About = () => {
       </div>
       <section className="bg-zinc-100 py-20">
         <div className="grid xl:grid-cols-2 grid-cols-1">
-          <div className="w-4/6 md:w-full mx-auto">
+          <div className="px-4">
             <div className="flex justify-center">
-              <img src="/images/bff.jpg" alt=""/>
+              <img src="/images/bff.jpg" alt="bff visit"/>
             </div>
           </div>
           <div>

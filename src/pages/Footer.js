@@ -12,7 +12,7 @@ export const Footer = () => {
                         Big Dream Farm was established in 2015 by talented farmers, 
                         Kama Doucoure and Baba Jagana, 
                         the journey began when founders Kama and Baba, 
-                        met up in 2017 and gather some community leaders to discuss about our supply in lambs during Eids.
+                        met up in 2020 and gather some community leaders to discuss about our supply in lambs during Eids.
                     </p>
                 </div>
             </div>
