@@ -25,7 +25,7 @@ export const About = () => {
       </div>
       <section className="bg-zinc-100 py-20">
         <div className="grid xl:grid-cols-2 grid-cols-1">
-          <div className="w-5/6 mx-auto">
+          <div className="w-4/6 md:w-full mx-auto">
             <img src="/images/bff.jpg" alt=""/>
           </div>
           <div>
@@ -37,7 +37,7 @@ export const About = () => {
                 Inspired by our differences and a shared passion for agriculture especially of widely products consumed in our community.
                 Big Dream Farm consists of fifty five inspired farmers some from West Africa living in the States, we came together with a vision to provide our community with organic products. 
               </p>
-              <p className="text-base text-zinc-600 font-medium leading-6 tracking-wide">
+              <p className="text-base text-zinc-600 font-medium leading-6 tracking-wide mt-2">
                 Our early years were about how we can grow products such as okra and African Eggplant in a non-tropical climate, 
                 after our studies in our community in response of high demand in those products we leased a 43 acre land in Saugerties and started clearing it out building barns and greenhouses.
                 We currently operates three greenhouses which produced five tons of okra and eggplant every year.
