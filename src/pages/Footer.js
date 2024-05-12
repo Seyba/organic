@@ -68,7 +68,7 @@ export const Footer = () => {
                 <div>
                     <h3 className="text-2xl text-white font-semibold mb-4">Soumppou Kaffo Farm</h3>
                     <h4>
-                        <a className="text-white py-2" href="tel: +17189745933">+1 (718) 974 5933</a>
+                        <a className="text-white py-2" href="tel: +19295864022">+1 (929) 586 4022</a>
                     </h4>
                     <h4 className="text-white hover:text-slate-400  py-2">
                         soumppoukaffo@gmail.com
