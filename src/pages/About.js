@@ -26,13 +26,15 @@ export const About = () => {
       <section className="bg-zinc-100 py-20">
         <div className="grid xl:grid-cols-2 grid-cols-1">
           <div className="w-4/6 md:w-full mx-auto">
-            <img src="/images/bff.jpg" alt=""/>
+            <div className="flex justify-center">
+              <img src="/images/bff.jpg" alt=""/>
+            </div>
           </div>
           <div>
             <div className="w-5/6 mx-auto">
               <h3 className="text-3xl font-bold tracking-wider mb-2 leading-10">History</h3>
               <p className="text-base text-zinc-600 font-medium leading-6 tracking-wide">
-                Big Dream Farm AKA Soumppou Kaffo Farm was founded in 2013 by Kama Doucoure an inspired farmer from Africa.
+                Big Dream Farm AKA Soumppou Kaffo Farm is a livestock, vegetables, egg and meat producing farm founded in 2020 by Kama Doucoure an inspired farmer from Africa.
                 After the foundation Kama brought out the idea of having this opportunity in mostly african american community in New York, then a diverse group of farmers mostly originally from west Africa joined the organization to combine their expertise from homeland. 
                 Inspired by our differences and a shared passion for agriculture especially of widely products consumed in our community.
                 Big Dream Farm consists of fifty five inspired farmers some from West Africa living in the States, we came together with a vision to provide our community with organic products. 
@@ -43,7 +45,10 @@ export const About = () => {
                 We currently operates three greenhouses which produced five tons of okra and eggplant every year.
                 Besides the okra and the eggplant supplies we also provide our local stores with lamb and chicken.  
                 The constant need of lamb supply during Eids and many other cultural events helps us expand even more into farming. 
-                
+              </p>
+              <p className="text-base text-zinc-600 font-medium leading-6 tracking-wide mt-2">
+                We provide services that create positive health outcomes, we currently provide the community especially members with fresh and healthy products. 
+                Beside selling our products we also offer education programs to build the local food service.
               </p>
             </div>
           </div>
