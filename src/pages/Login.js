@@ -33,7 +33,7 @@ export const Login = () => {
 
     useEffect(() => {
         if(isSuccess) {
-          navigate('admin')
+          navigate('')
         } else {
           navigate("")
         }

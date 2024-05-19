@@ -16,6 +16,9 @@ import { Signup } from './pages/Signup';
 import { Products } from './pages/Products';
 import { Product } from './pages/Product';
 import { Cart } from './pages/Cart';
+import { Dashboard } from './pages/Dashboard';
+import { ProtectedRoutes } from './component/ProtectedRoutes';
+import { WishList } from './pages/WishList';
 
 function App() {
   return (
@@ -25,6 +28,10 @@ function App() {
           <Navbar/>
           <Cart/>
           <Routes>
+            <Route element={<ProtectedRoutes/>}>
+              <Route path="/dashboard" element={<Dashboard/>}/>
+              <Route path="/wishlist" element={<WishList/>}/>
+            </Route>
             <Route path="/" element={<Home/>}/>
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
