@@ -1,12 +1,73 @@
 const User = require('../../models/userModel')
 const jwt = require('jsonwebtoken')
 const bcrypt = require('bcrypt')
+const asyncHandler = require('express-async-handler')
+const { generateNewToken } = require('../../config/refreshToken')
+const { generateToken } = require('../../config/jwtToken')
 // const Cart = require('../../models/cartModel')
 // const Coupon = require('../../models/couponModel')
 // const Order = require('../../models/orderModel')
 // const Product = require('../../models/productModel')
 const uniqid = require('uniqid')
 
+
+const createUser = asyncHandler(
+    async (req, res) => {
+        const email = req.body.email
+        const user = await User.find({email})
+    
+        if(!user.length){
+            //* Create one
+            const newUser = User.create(req.body)
+            res.json(newUser)
+        } else {
+            //* User already exist
+            throw new Error(
+                "An Account is Associated With this Email!!"
+            )
+            // res.json({
+            //     msg: "An Account is Associated With this Email!!",
+            //     success: false
+            // })
+        }
+    }
+)
+
+const logUser = asyncHandler(
+    async (req, res) => {
+        const { email, password} = req.body
+
+        //* check for user
+        const user = await User.findOne({email})
+        const match = await bcrypt.compare(password, user.password)
+
+        if(!user) throw new Error("No User Found!")
+
+        if(user && match){
+            const refreshToken = await generateNewToken(user?._id)
+            const updateUser = await User.findByIdAndUpdate(
+                user._id, 
+                {refreshToken: refreshToken}, 
+                {new: true}
+            )
+
+            res.cookie('refreshToken', refreshToken, {
+                httpOnly: true,
+                maxAge: 72 * 60 * 60 * 1000
+            })
+            res.json({
+                _id: user?._id,
+                firstname: user.firstname,
+                lastname: user.lastname,
+                email: user.email,
+                mobile: user.mobile,
+                token: generateToken(user?._id)
+            })
+        } else {
+            throw new Error('Invalid Credentials')
+        }
+    }
+)
 async function create(req, res){
     try {
         const user = await User.create(req.body)

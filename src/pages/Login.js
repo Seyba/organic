@@ -33,9 +33,9 @@ export const Login = () => {
 
     useEffect(() => {
         if(isSuccess) {
-          navigate('')
+          navigate('/dashboard')
         } else {
-          navigate("")
+          navigate("/login")
         }
       },[user, isLoading,isError, isSuccess, message]
     )
