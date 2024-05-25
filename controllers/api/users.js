@@ -43,7 +43,7 @@ const logUser = asyncHandler(
         const match = await bcrypt.compare(password, user.password)
 
         if(!user) throw new Error("No User Found!")
-
+        
         if(user && match){
             const refreshToken = await generateNewToken(user?._id)
             const updateUser = await User.findByIdAndUpdate(
