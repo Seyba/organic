@@ -5,13 +5,13 @@ const ensureLoggedIn = require('../../config/ensureLoggedIn')
 //const isAdmin = require('../../config/isAdmin')
 
 
-router.post('/', usersCtrl.create);
-router.post('/login', usersCtrl.login);
-router.delete('/:id', ensureLoggedIn, usersCtrl.unSubscribe)
-router.get('/:id', usersCtrl.getSingleUser)
+router.post('/', usersCtrl.createUser);
+router.post('/login', usersCtrl.logUser);
+router.delete('/:id', ensureLoggedIn, usersCtrl.deleteUser)
+router.get('/:id', usersCtrl.getUser)
 router.put('/:id', usersCtrl.updateUser)
-router.put('/unblock-user/:id', ensureLoggedIn, usersCtrl.unblockUser)
-router.get('/check-token', ensureLoggedIn, usersCtrl.checkToken);
+router.put('/unblock-user/:id', ensureLoggedIn, usersCtrl.unBlockUser)
+//router.get('/check-token', ensureLoggedIn, usersCtrl.checkToken);
 router.get('/',  usersCtrl.getUsers)
 
 //router.post('/admin-login', usersCtrl.adminLogin)
