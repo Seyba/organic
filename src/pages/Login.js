@@ -25,7 +25,8 @@ export const Login = () => {
         onSubmit: (values) => {
             //console.log(values)
             dispatch(login(values))
-            alert(JSON.stringify(values, null, 2))
+            
+            //alert(JSON.stringify(values, null, 2))
         }
     })
 
@@ -35,7 +36,7 @@ export const Login = () => {
         if(isSuccess) {
           navigate('/dashboard')
         } else {
-          navigate("/login")
+          navigate("/")
         }
       },[user, isLoading,isError, isSuccess, message]
     )
