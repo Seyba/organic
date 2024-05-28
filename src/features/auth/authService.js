@@ -24,11 +24,10 @@ const login = async (userData) => {
 }
 
 const logout = async () => {
-    const response = await axios.post(`${base_url}users/logout`)
+    const response = await axios.get(`${base_url}users/logout`)
     
-    if(response.data){
-        localStorage.removeItem('user')
-    }
+    localStorage.removeItem('user')
+    
     return response.data
 }
 // const getOrders = async () => {

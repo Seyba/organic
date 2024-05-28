@@ -8,8 +8,8 @@ const ensureLoggedIn = require('../../config/ensureLoggedIn')
 router.post('/', usersCtrl.createUser);
 router.post('/login', usersCtrl.logUser);
 router.delete('/:id',ensureLoggedIn, usersCtrl.deleteUser)
+router.get('/logout', usersCtrl.logOut)
 router.get('/:id', usersCtrl.getUser)
-router.get('/logout/:id',ensureLoggedIn, usersCtrl.logOut)
 router.put('/block-user/:id', ensureLoggedIn, usersCtrl.blockUser)
 router.put('/:id', usersCtrl.updateUser)
 router.put('/unblock-user/:id', usersCtrl.unBlockUser)
